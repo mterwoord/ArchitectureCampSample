@@ -1,0 +1,23 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:sys="clr-namespace:System;assembly=mscorlib">
+
+    <!--font sizes-->
+    <sys:Double x:Key="DefaultFontSize">14</sys:Double>
+    <sys:Double x:Key="ModuleFontSize">14</sys:Double>
+    <sys:Double x:Key="HeaderFontSize">28</sys:Double>
+    <sys:Double x:Key="ButtonFontSize">14</sys:Double>
+    
+    <!--dialogs-->
+    <GridLength x:Key="DialogOuterSpacing">12</GridLength>
+    
+    <!--formulars-->
+    <GridLength x:Key="FormularHorizontalSpacing">10</GridLength>
+    <GridLength x:Key="FormularVerticalSpacing">6</GridLength>
+    
+    <!--buttons-->
+    <Thickness x:Key="ButtonSpacing">8,8,0,0</Thickness>
+    <sys:Double x:Key="ButtonWidth">100</sys:Double>
+    <sys:Double x:Key="ButtonHeight">45</sys:Double>
+
+</ResourceDictionary>

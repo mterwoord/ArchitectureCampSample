@@ -1,0 +1,15 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:my="clr-namespace:SharedUI">
+    <DataTemplate x:Key="ModulesListViewDataTemplate">
+        <Border Background="{StaticResource ButtonBackground}" Padding="14,10,14,10">
+            <StackPanel>
+                <Image Source="{Binding Path=ImageUri, Converter={StaticResource StringToBitmapImageConverter}}"
+                       HorizontalAlignment="Center" Width="32" Height="32"/>
+                <TextBlock HorizontalAlignment="Center" Margin="0,2,0,0"
+                           Text="{Binding DisplayName}" FontSize="11" />
+            </StackPanel>
+        </Border>
+    </DataTemplate>
+
+</ResourceDictionary>

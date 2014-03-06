@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:tns="http://schemas.datacontract.org/2004/07/BusinessLayer.Models" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/BusinessLayer.Models" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:55152/SessionService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:import schemaLocation="http://localhost:55152/SessionService.svc?xsd=xsd4" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:import schemaLocation="http://localhost:55152/SessionService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/EndToEnd.DataLayer.Models" />
+  <xs:complexType name="ArrayOfSessionDto">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="SessionDto" nillable="true" type="tns:SessionDto" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfSessionDto" nillable="true" type="tns:ArrayOfSessionDto" />
+  <xs:complexType name="SessionDto">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Abstract" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Duration" type="ser:duration" />
+      <xs:element xmlns:q1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="RatingIds" nillable="true" type="q1:ArrayOfint" />
+      <xs:element minOccurs="0" name="Room" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SessionBaseId" type="xs:int" />
+      <xs:element minOccurs="0" name="SessionType" nillable="true" type="xs:string" />
+      <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/EndToEnd.DataLayer.Models" minOccurs="0" name="Speaker1" nillable="true" type="q2:Speaker" />
+      <xs:element minOccurs="0" name="Speaker1Id" type="xs:int" />
+      <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/EndToEnd.DataLayer.Models" minOccurs="0" name="Speaker2" nillable="true" type="q3:Speaker" />
+      <xs:element minOccurs="0" name="Speaker2Id" type="xs:int" />
+      <xs:element minOccurs="0" name="StartTime" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Title" nillable="true" type="xs:string" />
+      <xs:element xmlns:q4="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="TrackIds" nillable="true" type="q4:ArrayOfint" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SessionDto" nillable="true" type="tns:SessionDto" />
+</xs:schema>

@@ -1,0 +1,20 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <BitmapImage x:Key="OkImage" UriSource="pack://application:,,,/SharedUI;component/Images/Ok.png"/>
+    <BitmapImage x:Key="CancelImage" UriSource="pack://application:,,,/SharedUI;component/Images/Cancel.png"/>
+    <BitmapImage x:Key="AddImage" UriSource="pack://application:,,,/SharedUI;component/Images/Add.png"/>
+    <BitmapImage x:Key="EditImage" UriSource="pack://application:,,,/SharedUI;component/Images/Edit.png"/>
+    <BitmapImage x:Key="DeleteImage" UriSource="pack://application:,,,/SharedUI;component/Images/Delete.png"/>
+    <BitmapImage x:Key="InformationImage" UriSource="pack://application:,,,/SharedUI;component/Images/Information.png"/>
+    <BitmapImage x:Key="MusicImage" UriSource="pack://application:,,,/SharedUI;component/Images/Music.png"/>
+    <BitmapImage x:Key="PicturesImage" UriSource="pack://application:,,,/SharedUI;component/Images/Pictures.png"/>
+    <BitmapImage x:Key="SpeakerImage" UriSource="pack://application:,,,/SharedUI;component/Images/Speaker.png"/>
+    <BitmapImage x:Key="SessionImage" UriSource="pack://application:,,,/SharedUI;component/Images/Session.png"/>
+    <BitmapImage x:Key="RatingImage" UriSource="pack://application:,,,/SharedUI;component/Images/Rating.png"/>
+    <BitmapImage x:Key="ScheduleImage" UriSource="pack://application:,,,/SharedUI;component/Images/Schedule.png"/>
+    <BitmapImage x:Key="Baier" UriSource="pack://application:,,,/SharedUI;component/Images/baier.jpg"/>
+    <BitmapImage x:Key="Binder" UriSource="pack://application:,,,/SharedUI;component/Images/binder.jpg"/>
+    <BitmapImage x:Key="Neumann" UriSource="pack://application:,,,/SharedUI;component/Images/neumann.jpg"/>
+
+</ResourceDictionary>

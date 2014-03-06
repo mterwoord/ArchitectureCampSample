@@ -1,0 +1,70 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:my="clr-namespace:SharedUI"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <Storyboard x:Key="WidthAnimation">
+        <DoubleAnimation Storyboard.TargetProperty="Width"
+                         By="10" Duration="0:0:0.2" AutoReverse="True">
+            <DoubleAnimation.EasingFunction>
+                <PowerEase EasingMode="EaseIn"/>
+            </DoubleAnimation.EasingFunction>
+        </DoubleAnimation>
+        <DoubleAnimation Storyboard.TargetProperty="Height"
+                         By="10" Duration="0:0:0.2" AutoReverse="True">
+            <DoubleAnimation.EasingFunction>
+                <PowerEase EasingMode="EaseIn"/>
+            </DoubleAnimation.EasingFunction>
+        </DoubleAnimation>
+    </Storyboard>
+
+    <my:AnimationPlaceholder x:Key="GrowingAnimation">
+        <my:AnimationPlaceholder.RenderTransform>
+            <ScaleTransform x:Name="transform" ScaleX="1" ScaleY="1"/>
+        </my:AnimationPlaceholder.RenderTransform>
+        <my:AnimationPlaceholder.Triggers>
+            <EventTrigger RoutedEvent="FrameworkElement.PreviewMouseLeftButtonDown">
+                <EventTrigger.Actions>
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <DoubleAnimation Storyboard.TargetProperty="(UIElement.RenderTransform).(ScaleTransform.ScaleX)"
+                                             From="1" To="1.15" Duration="0:0:0.2" AutoReverse="True">
+                                <DoubleAnimation.EasingFunction>
+                                    <PowerEase EasingMode="EaseIn"/>
+                                </DoubleAnimation.EasingFunction>
+                            </DoubleAnimation>
+                            <DoubleAnimation Storyboard.TargetProperty="(UIElement.RenderTransform).(ScaleTransform.ScaleY)"
+                                             From="1" To="1.15" Duration="0:0:0.2" AutoReverse="True">
+                                <DoubleAnimation.EasingFunction>
+                                    <PowerEase EasingMode="EaseIn"/>
+                                </DoubleAnimation.EasingFunction>
+                            </DoubleAnimation>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger.Actions>
+            </EventTrigger>
+        </my:AnimationPlaceholder.Triggers>
+    </my:AnimationPlaceholder>
+
+    <my:AnimationPlaceholder x:Key="EntryAnimation">
+        <my:AnimationPlaceholder.RenderTransform>
+            <TranslateTransform X="20"/>
+        </my:AnimationPlaceholder.RenderTransform>
+        <my:AnimationPlaceholder.Triggers>
+            <EventTrigger RoutedEvent="FrameworkElement.Loaded">
+                <EventTrigger.Actions>
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <DoubleAnimation Storyboard.TargetProperty="(UIElement.RenderTransform).(TranslateTransform.X)"
+                                             From="20" To="0" Duration="0:0:0.4">
+                                <DoubleAnimation.EasingFunction>
+                                    <PowerEase EasingMode="EaseIn"/>
+                                </DoubleAnimation.EasingFunction>
+                            </DoubleAnimation>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger.Actions>
+            </EventTrigger>
+        </my:AnimationPlaceholder.Triggers>
+    </my:AnimationPlaceholder>
+
+</ResourceDictionary>

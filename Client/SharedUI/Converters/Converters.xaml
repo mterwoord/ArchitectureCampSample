@@ -1,0 +1,10 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:SharedUI.Converters">
+    <local:ByteArrayToBitmapImageConverter x:Key="ByteArrayToBitmapImageConverter"/>
+    <local:BitmapImageToByteArrayConverter x:Key="BitmapImageToByteArrayConverter"/>
+    <local:StringToBitmapImageConverter x:Key="StringToBitmapImageConverter"/>
+    <local:UriToBitmapImageConverter x:Key="UriToBitmapImageConverter"/>
+    <local:DoubleRatingToIntRatingConverter x:Key="DoubleRatingToIntRatingConverter"/>
+    <BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter"/>
+</ResourceDictionary>

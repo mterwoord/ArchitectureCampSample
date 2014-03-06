@@ -1,0 +1,35 @@
+﻿<Window x:Class="Shell.Views.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:my="clr-namespace:SharedUI;assembly=SharedUI"
+        xmlns:vm="clr-namespace:Shell.ViewModels"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"  d:DesignWidth="700" d:DesignHeight="400"
+        Title="Conference Tool" MinHeight="400" MinWidth="700" WindowStartupLocation="CenterScreen"
+        Background="{StaticResource DefaultBackground}"
+        FontFamily="{StaticResource DefaultFontFamily}"
+        FontSize="{StaticResource DefaultFontSize}">
+
+    <Window.Resources>
+        <vm:MainViewModel x:Key="viewModel"/>
+    </Window.Resources>
+
+    <Grid DataContext="{StaticResource viewModel}">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" MinWidth="80"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <!--module list-->
+        <ListView Grid.Column="0" x:Name="listView"
+			ItemsSource="{Binding ModulesDataView}"
+			Style="{StaticResource ModulesListViewStyle}"/>
+
+        <!--module view container-->
+        <Border Grid.Column="1" Background="{StaticResource DefaultBackground}">
+            <ContentPresenter Content="{Binding ActiveView}"/>
+        </Border>
+
+    </Grid>
+</Window>

@@ -1,0 +1,219 @@
+﻿<UserControl x:Class="SessionModule.Views.SessionView" x:Name="root"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:converters="clr-namespace:SessionModule.Assets.Converters"
+             xmlns:ctl="clr-namespace:SharedUI.Controls;assembly=SharedUI"
+             xmlns:flyouts="clr-namespace:SharedUI.Controls.Flyouts;assembly=SharedUI"
+             xmlns:behaviors="clr-namespace:SharedUI.Behaviors;assembly=SharedUI"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" d:DesignHeight="700" d:DesignWidth="1000"
+             Background="{StaticResource DefaultModuleBackground}"
+             FontFamily="{StaticResource DefaultFontFamily}"
+             FontSize="{StaticResource DefaultFontSize}">
+
+    <Grid behaviors:VisualStateSelector.VisualState="{Binding CurrentState}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="0"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="0"/>
+        </Grid.ColumnDefinitions>
+
+        <!--Header-->
+        <ctl:CommandHeader Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2" HeaderText="Sessions" HeaderImage="{StaticResource SessionImage}">
+            <ctl:AppButton x:Name="addButton" ButtonType="Add" Command="{Binding AddCommand}"
+                           behaviors:SetFocusBehavior.SetFocusTo="{Binding ElementName=titleTextBox}"/>
+            <ctl:AppButton x:Name="editButton" ButtonType="Edit" Command="{Binding EditCommand}"
+                           behaviors:SetFocusBehavior.SetFocusTo="{Binding ElementName=titleTextBox}"/>
+            <ctl:AppButton x:Name="deleteButton" ButtonType="Delete" Command="{Binding DeleteCommand}"/>
+            <ctl:AppButton x:Name="okButton" ButtonType="OK" Command="{Binding OkCommand}" Visibility="Collapsed"/>
+            <ctl:AppButton x:Name="cancelEditButton" ButtonType="Cancel" Command="{Binding CancelEditCommand}" Visibility="Collapsed"/>
+        </ctl:CommandHeader>
+
+        <!--Content-->
+        <Grid Grid.Row="2" Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="10" />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="10"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <!--Content: List-->
+            <ListView x:Name="listView" Grid.Row="0" Grid.RowSpan="3" Grid.Column="0" MinWidth="100" MaxWidth="500" IsSynchronizedWithCurrentItem="True" Padding="10"
+                      ItemsSource="{Binding SessionsView}" BorderThickness="1" BorderBrush="LightGray" Margin="10,10,0,10" Background="#FFF6F6F6">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <Border Padding="10" Background="White" BorderBrush="Gainsboro" BorderThickness="1">
+                            <StackPanel>
+                                <TextBlock Text="{Binding Title}" MaxWidth="460" TextTrimming="CharacterEllipsis" FontWeight="Bold" HorizontalAlignment="Left"/>
+                                <StackPanel Orientation="Horizontal" HorizontalAlignment="Left">
+                                    <TextBlock TextTrimming="CharacterEllipsis" FontStyle="Italic">
+                                        <TextBlock.Text>
+                                            <MultiBinding StringFormat="{}{0} ({1})">
+                                                <Binding Path="Speaker1.Name"/>
+                                                <Binding Path="Speaker1.Company"/>
+                                            </MultiBinding>
+                                        </TextBlock.Text>
+                                    </TextBlock>
+                                    <TextBlock TextTrimming="CharacterEllipsis" FontStyle="Italic">
+                                        <TextBlock.Text>
+                                            <MultiBinding StringFormat="{}, {0} ({1})">
+                                                <Binding Path="Speaker2.Name"/>
+                                                <Binding Path="Speaker2.Company"/>
+                                            </MultiBinding>
+                                        </TextBlock.Text>
+                                    </TextBlock>
+                                </StackPanel>
+                            </StackPanel>
+                        </Border>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+                <ListView.ItemContainerStyle>
+                    <Style TargetType="ListViewItem">
+                        <Setter Property="HorizontalContentAlignment" Value="Stretch"></Setter>
+                    </Style>
+                </ListView.ItemContainerStyle>
+            </ListView>
+
+            <!--Content: Details-->
+            <Border x:Name="detailsBorder" Grid.Row="2" Grid.Column="2" Margin="0,0,10,10" Background="#FFF6F6F6" Padding="10" BorderBrush="LightGray" BorderThickness="1"
+                    behaviors:ReadOnlyBehavior.IsReadOnly="True">
+
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="5"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="5"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="5"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="5"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="5"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="10"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Grid.Row="0" Grid.Column="0" Text="Titel:" VerticalAlignment="Center"/>
+                    <TextBox x:Name="titleTextBox" Grid.Row="0" Grid.Column="2" Text="{Binding SessionsView.CurrentItem.Title}" behaviors:HighlightBehavior.HighlightOnFocus="true"/>
+                    <TextBlock Grid.Row="2" Grid.Column="0" Text="Typ:" VerticalAlignment="Center"/>
+                    <ComboBox Grid.Row="2" Grid.Column="2"
+                              ItemsSource="{Binding SessionTypesView}"
+                              DisplayMemberPath="."
+                              SelectedItem="{Binding SessionsView.CurrentItem.SessionType, Mode=TwoWay}"
+                              behaviors:HighlightBehavior.HighlightOnFocus="true"/>
+                    <TextBlock Grid.Row="4" Grid.Column="0" Text="Track:" VerticalAlignment="Top" Margin="0,2,0,0"/>
+                    <ListView Grid.Row="4" Grid.Column="2" MinHeight="150"
+                              ItemsSource="{Binding TracksView}"
+                               behaviors:HighlightBehavior.HighlightOnFocus="true">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <CheckBox Content="{Binding Name}" IsChecked="{Binding IsChecked, Mode=TwoWay}"/>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                    <TextBlock Grid.Row="6" Grid.Column="0" Text="Sprecher 1:" VerticalAlignment="Center"/>
+                    <ComboBox Grid.Row="6" Grid.Column="2"
+                              ItemsSource="{Binding SpeakersView}"
+                              DisplayMemberPath="Name"
+                              SelectedValuePath="Id"
+                              SelectedValue="{Binding CurrentSession.Speaker1Id, Mode=TwoWay}"
+                              IsSynchronizedWithCurrentItem="False"
+                               behaviors:HighlightBehavior.HighlightOnFocus="true"/>
+                    <TextBlock Grid.Row="8" Grid.Column="0" Text="Sprecher 2:" VerticalAlignment="Center"/>
+                    <ComboBox Grid.Row="8" Grid.Column="2"
+                              ItemsSource="{Binding SpeakersView}"
+                              DisplayMemberPath="Name"
+                              SelectedValuePath="Id"
+                              SelectedValue="{Binding CurrentSession.Speaker2Id, Mode=TwoWay}"
+                              IsSynchronizedWithCurrentItem="False"
+                               behaviors:HighlightBehavior.HighlightOnFocus="true"/>
+                    <TextBlock Grid.Row="10" Grid.Column="0" Text="Abstract:" VerticalAlignment="Top" Margin="0,4,0,0"/>
+                    <TextBox Grid.Row="10" Grid.Column="2" Text="{Binding SessionsView.CurrentItem.Abstract}"
+                             TextWrapping="Wrap"
+                             ScrollViewer.VerticalScrollBarVisibility="Auto"
+                             ScrollViewer.HorizontalScrollBarVisibility="Disabled"
+                              behaviors:HighlightBehavior.HighlightOnFocus="true"/>
+                </Grid>
+            </Border>
+        </Grid>
+
+        <!--Delete Popup-->
+        <Popup x:Name="popup" StaysOpen="True" IsOpen="{Binding IsDeleteDialogOpen}"
+                           PlacementTarget="{Binding ElementName=deleteButton}"
+                           PopupAnimation="Slide"
+                           AllowsTransparency="True">
+            <flyouts:PopupHost x:Name="popupHost" Header="Session löschen" Background="#FFDBE3E6"
+                               Alignment="Bottom"
+                               OpenButton="{Binding ElementName=commitDeleteButton}"
+                               CloseButton="{Binding ElementName=cancelButton}">
+                <StackPanel>
+                    <TextBlock Text="Wollen Sie die Session wirklich löschen?"/>
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                        <ctl:AppButton x:Name="commitDeleteButton" ButtonType="Yes" MinWidth="100" Margin="0,10,0,0" IsDefault="True" 
+                                       Command="{Binding DeleteCommand}"/>
+                        <ctl:AppButton x:Name="cancelButton" ButtonType="No" MinWidth="100" Margin="0,10,0,0" IsCancel="True"
+                                       Command="{Binding CancelDeleteCommand}"/>
+                    </StackPanel>
+                </StackPanel>
+            </flyouts:PopupHost>
+        </Popup>
+
+        <VisualStateManager.VisualStateGroups>
+            <VisualStateGroup x:Name="Common">
+                <VisualStateGroup.Transitions>
+                </VisualStateGroup.Transitions>
+                <VisualState x:Name="Normal"/>
+                <VisualState x:Name="Edit">
+                    <Storyboard>
+                        <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="addButton">
+                            <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Collapsed}"/>
+                        </ObjectAnimationUsingKeyFrames>
+                        <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="editButton">
+                            <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Collapsed}"/>
+                        </ObjectAnimationUsingKeyFrames>
+                        <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="deleteButton">
+                            <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Collapsed}"/>
+                        </ObjectAnimationUsingKeyFrames>
+                        <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="okButton">
+                            <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Visible}"/>
+                        </ObjectAnimationUsingKeyFrames>
+                        <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="cancelEditButton">
+                            <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Visible}"/>
+                        </ObjectAnimationUsingKeyFrames>
+                        <BooleanAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.IsEnabled)" Storyboard.TargetName="listView">
+                            <DiscreteBooleanKeyFrame KeyTime="0" Value="False"/>
+                        </BooleanAnimationUsingKeyFrames>
+                        <BooleanAnimationUsingKeyFrames Storyboard.TargetProperty="(behaviors:ReadOnlyBehavior.IsReadOnly)" Storyboard.TargetName="detailsBorder">
+                            <DiscreteBooleanKeyFrame KeyTime="0" Value="False"/>
+                        </BooleanAnimationUsingKeyFrames>
+                    </Storyboard>
+                </VisualState>
+            </VisualStateGroup>
+        </VisualStateManager.VisualStateGroups>
+    </Grid>
+
+    <!--Externe Ressourcen einbinden-->
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="pack://application:,,,/SharedUI;component/Resources.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </UserControl.Resources>
+</UserControl>

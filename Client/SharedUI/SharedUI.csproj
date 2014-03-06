@@ -1,0 +1,260 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E8C351C2-7352-478F-95DA-88B9C73765BC}</ProjectGuid>
+    <OutputType>library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SharedUI</RootNamespace>
+    <AssemblyName>SharedUI</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\output\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Animations\AnimationType.cs" />
+    <Compile Include="Assets.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Behaviors\EnterToTabBehavior.cs" />
+    <Compile Include="Behaviors\EnterToFocusBehavior.cs" />
+    <Compile Include="Behaviors\SetFocusBehavior.cs" />
+    <Compile Include="Behaviors\HighlightBehavior.cs" />
+    <Compile Include="Behaviors\NumericBehavior.cs" />
+    <Compile Include="Behaviors\ReadOnlyBehavior.cs" />
+    <Compile Include="Behaviors\SelectImageBehavior.cs" />
+    <Compile Include="Behaviors\VisualStateSelector.cs" />
+    <Compile Include="Controls\AppButton.cs" />
+    <Compile Include="Controls\CommandHeader.cs" />
+    <Compile Include="Controls\Flyouts\FlyoutAlignmentToNavigationDirectionConverter.cs" />
+    <Compile Include="Controls\Flyouts\FlyoutBase.cs" />
+    <Compile Include="Controls\Flyouts\FlyoutContainer.cs" />
+    <Compile Include="Controls\Flyouts\FlyoutMessageBar.cs" />
+    <Compile Include="Controls\Flyouts\FlyoutPanel.cs" />
+    <Compile Include="Controls\Flyouts\MessageDialog.cs" />
+    <Compile Include="Controls\Flyouts\NavigationButton.cs" />
+    <Compile Include="Controls\Flyouts\NavigationView.cs" />
+    <Compile Include="Controls\Flyouts\PopupHost.cs" />
+    <Compile Include="Controls\HeaderedArea.cs" />
+    <Compile Include="Controls\RatingControls\Clipper.cs" />
+    <Compile Include="Controls\RatingControls\EnumerableFunctions.cs" />
+    <Compile Include="Controls\RatingControls\InteractionHelper.cs" />
+    <Compile Include="Controls\RatingControls\ItemsControlHelper.cs" />
+    <Compile Include="Controls\RatingControls\IUpdateVisualState.cs" />
+    <Compile Include="Controls\RatingControls\LinearClipper.cs" />
+    <Compile Include="Controls\RatingControls\NullableConverter.cs" />
+    <Compile Include="Controls\RatingControls\Rating.cs" />
+    <Compile Include="Controls\RatingControls\RatingAutomationPeer.cs" />
+    <Compile Include="Controls\RatingControls\RatingItem.cs" />
+    <Compile Include="Controls\RatingControls\RatingItemAutomationPeer.cs" />
+    <Compile Include="Controls\RatingControls\RatingSelectionMode.cs" />
+    <Compile Include="Controls\RatingControls\VisualStates.cs" />
+    <Compile Include="Converters\BitmapImageToByteArrayConverter.cs" />
+    <Compile Include="Converters\ByteArrayToBitmapImageConverter.cs" />
+    <Compile Include="Converters\DoubleRatingToIntRatingConverter.cs" />
+    <Compile Include="Converters\StringToBitmapImageConverter.cs" />
+    <Compile Include="Converters\UriToBitmapImageConverter.cs" />
+    <Compile Include="Images\ImageType.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="Animations\Animations.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Colors\Colors.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\AppButton.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\CommandHeader.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\Flyouts\FlyoutContainer.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\Flyouts\FlyoutMessageBar.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\Flyouts\FlyoutPanel.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\Flyouts\MessageDialog.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\Flyouts\NavigationButton.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\Flyouts\NavigationView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\Flyouts\PopupHost.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\HeaderedArea.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\RatingControls\Rating.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\RatingControls\RatingItem.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Converters\Converters.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Fonts\FontFamilies.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Images\Images.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Sizes\Sizes.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Styles\ButtonStyle.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Styles\ModulesListViewStyle.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Styles\TextBlockStyle.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Styles\TextBoxStyle.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Themes\generic.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Add.png" />
+    <Resource Include="Images\Cancel.png" />
+    <Resource Include="Images\Ok.png" />
+    <Resource Include="Images\Delete.png" />
+    <Resource Include="Images\Edit.png" />
+    <Resource Include="Images\Information.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Music.png" />
+    <Resource Include="Images\Pictures.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Rating.png" />
+    <Resource Include="Images\Schedule.png" />
+    <Resource Include="Images\Session.png" />
+    <Resource Include="Images\Speaker.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Controls\Flyouts\Images\Close.png" />
+    <Resource Include="Controls\Flyouts\Images\CloseActive.png" />
+    <Resource Include="Controls\Flyouts\Images\Error.png" />
+    <Resource Include="Controls\Flyouts\Images\Info.png" />
+    <Resource Include="Controls\Flyouts\Images\Warning.png" />
+    <Resource Include="Controls\Flyouts\Images\Warning2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\baier.jpg" />
+    <Resource Include="Images\binder.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\neumann.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

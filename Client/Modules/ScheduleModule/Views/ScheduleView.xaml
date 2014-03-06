@@ -1,0 +1,90 @@
+﻿<UserControl x:Class="ScheduleModule.Views.ScheduleView" x:Name="root"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:ctl="clr-namespace:SharedUI.Controls;assembly=SharedUI"
+             xmlns:flyouts="clr-namespace:SharedUI.Controls.Flyouts;assembly=SharedUI"
+             xmlns:ratingControls="clr-namespace:SharedUI.Controls.RatingControls;assembly=SharedUI"
+             xmlns:local="clr-namespace:ScheduleModule"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" d:DesignHeight="700" d:DesignWidth="1000"
+             Background="{StaticResource DefaultModuleBackground}"
+             FontFamily="{StaticResource DefaultFontFamily}"
+             FontSize="{StaticResource DefaultFontSize}">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="10"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="10"/>
+        </Grid.ColumnDefinitions>
+
+        <!--Header-->
+        <ctl:CommandHeader Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="3" HeaderText="Zeitplaner" HeaderImage="{StaticResource ScheduleImage}" Margin="0,0,-44,0">
+        </ctl:CommandHeader>
+
+        <!--Content-->
+        <Grid Grid.Row="2" Grid.Column="1">
+            
+            <!--Content: List-->
+            <Border Margin="10,10,0,0" BorderThickness="1" BorderBrush="LightGray">
+                <ScrollViewer VerticalScrollBarVisibility="Auto">
+                    <ItemsControl ItemsSource="{Binding SlotsView}" Padding="10" Background="#FFF6F6F6" 
+                                  SnapsToDevicePixels="True" UseLayoutRounding="False">
+                        <ItemsControl.ItemTemplateSelector>
+                            <local:ScheduleTemplateSelector />
+                        </ItemsControl.ItemTemplateSelector>
+                        <ItemsControl.Resources>
+                            <DataTemplate x:Key="sessionTemplate">
+                                <Border BorderBrush="Gainsboro" BorderThickness="1,1,1,1" Background="White" Padding="10,10" Margin="0,-1,0,0">
+                                    <Grid>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="50"/>
+                                            <ColumnDefinition Width="10"/>
+                                            <ColumnDefinition Width="*"/>
+                                        </Grid.ColumnDefinitions>
+                                        <TextBlock Grid.Column="0" Text="{Binding Start, StringFormat={}{0:hh:mm}}" FontWeight="Bold" FontSize="16" Foreground="#FF4D4C4C"/>
+                                        <TextBlock Grid.Column="2" Text="{Binding Session.Title}" Foreground="#FF4D4C4C"/>
+                                        <ComboBox Grid.Column="2"
+                                                  ItemsSource="{Binding DataContext.SessionsView, ElementName=root}"
+                                                  DisplayMemberPath="Title"
+                                                  SelectedValuePath="SessionBaseId"
+                                                  SelectedValue="{Binding SessionId, Mode=TwoWay}"
+                                                  IsSynchronizedWithCurrentItem="False"/>
+                                    </Grid>
+                                </Border>
+                            </DataTemplate>
+                            <DataTemplate x:Key="breakTemplate">
+                                <Border BorderBrush="Gainsboro" BorderThickness="1,1,1,0" Background="#FFA2EAB9" Padding="10,10">
+                                    <Grid>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="50"/>
+                                            <ColumnDefinition Width="10"/>
+                                            <ColumnDefinition Width="*"/>
+                                        </Grid.ColumnDefinitions>
+                                        <TextBlock Grid.Column="0" Text="{Binding Start, StringFormat={}{0:hh:mm}}" FontWeight="Bold" FontSize="16" Foreground="#FF4D4C4C"/>
+                                        <TextBlock Grid.Column="2" Text="Pause" Foreground="#FF4D4C4C"/>
+                                    </Grid>
+                                </Border>
+                            </DataTemplate>
+                        </ItemsControl.Resources>
+                    </ItemsControl>
+                </ScrollViewer>
+            </Border>
+        </Grid>
+    </Grid>
+
+    <!--Externe Ressourcen einbinden-->
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="pack://application:,,,/SharedUI;component/Resources.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </UserControl.Resources>
+</UserControl>

@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<sessions>
+  <session sessiontype="Session">
+    <title>What’s new in ReSharper 8</title>
+    <link>http://basta.net/2013/sessions/whats-new-resharper-8</link>
+    <description>
+      &lt;section class=&quot;field field-name-field-date field-type-datetime field-label-inline clearfix view-mode-teaser&quot;&gt;&lt;h2 class=&quot;field-label&quot;&gt;Zeit:&amp;nbsp;&lt;/h2&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;span class=&quot;date-display-single&quot;&gt;24. September 2013,  &lt;span class=&quot;date-display-start&quot; property=&quot;dc:date&quot; datatype=&quot;xsd:dateTime&quot; content=&quot;2013-09-24T17:45:00+02:00&quot;&gt;17.45&lt;/span&gt; bis &lt;span class=&quot;date-display-end&quot; property=&quot;dc:date&quot; datatype=&quot;xsd:dateTime&quot; content=&quot;2013-09-24T19:00:00+02:00&quot;&gt;19.00&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/section&gt;&lt;section class=&quot;field field-name-field-room field-type-taxonomy-term-reference field-label-inline clearfix view-mode-teaser&quot;&gt;&lt;h2 class=&quot;field-label&quot;&gt;Raum:&amp;nbsp;&lt;/h2&gt;&lt;ul class=&quot;field-items&quot;&gt;&lt;li class=&quot;field-item even&quot;&gt;Dijonsaal&lt;/li&gt;&lt;/ul&gt;&lt;/section&gt;&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden view-mode-teaser&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot; property=&quot;content:encoded&quot;&gt;&lt;p&gt;In this talk, we will explore the various new and improved features that have been introduced in the latest version of ReSharper. We’ll take a look at improvements in navigation, code completion, XAML and CSS support as well as architecture tools, the new extension manager and other tools that help improve your development experience.&lt;/p&gt;
+      &lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;view view-sessions view-id-sessions view-display-id-entity_view_1 view-dom-id-c415cee7c804ce69f9c4813ca72512b7&quot;&gt;
+
+
+
+      &lt;div class=&quot;view-content&quot;&gt;
+      &lt;div class=&quot;views-row views-row-1 views-row-odd views-row-first views-row-last&quot;&gt;
+
+      &lt;div class=&quot;views-field views-field-field-picture&quot;&gt;        &lt;div class=&quot;field-content&quot;&gt;&lt;a href=&quot;/2013/speakers/matt-ellis&quot;&gt;&lt;img typeof=&quot;foaf:Image&quot; class=&quot;image-style-speaker-bild-sessionpage&quot; src=&quot;http://basta.net/2013/sites/default/files/styles/speaker_bild_sessionpage/public/ellis.jpg?itok=l7rMTRHP&quot; width=&quot;50&quot; height=&quot;50&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/div&gt;  &lt;/div&gt;
+      &lt;div class=&quot;views-field views-field-title&quot;&gt;        &lt;span class=&quot;field-content&quot;&gt;&lt;a href=&quot;/2013/speakers/matt-ellis&quot;&gt;Matt Ellis&lt;/a&gt;&lt;/span&gt;  &lt;/div&gt;
+      &lt;div class=&quot;views-field views-field-field-firma&quot;&gt;        &lt;div class=&quot;field-content&quot;&gt;JetBrains&lt;/div&gt;  &lt;/div&gt;  &lt;/div&gt;
+      &lt;/div&gt;
+
+
+
+
+
+
+      &lt;/div&gt;
+    </description>
+    <pubDate>Tue, 24 Sep 2013 12:25:39 +0000</pubDate>
+    <tracks>
+      <track>C#</track>
+      <track>Web</track>
+    </tracks>
+
+    <speakers>
+      <speaker>Matt Ellis</speaker>
+    </speakers>
+    <guid isPermaLink="false">699 at http://basta.net/2013</guid>
+  </session>
+  <session sessiontype="KeyNote">
+    <title>Eröffnung</title>
+    <link>http://basta.net/2013/sessions/eroeffnung</link>
+    <description>
+      &lt;section class=&quot;field field-name-field-date field-type-datetime field-label-inline clearfix view-mode-teaser&quot;&gt;&lt;h2 class=&quot;field-label&quot;&gt;Zeit:&amp;nbsp;&lt;/h2&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;span class=&quot;date-display-single&quot;&gt;24. September 2013,  &lt;span class=&quot;date-display-start&quot; property=&quot;dc:date&quot; datatype=&quot;xsd:dateTime&quot; content=&quot;2013-09-24T08:30:00+02:00&quot;&gt;08.30&lt;/span&gt; bis &lt;span class=&quot;date-display-end&quot; property=&quot;dc:date&quot; datatype=&quot;xsd:dateTime&quot; content=&quot;2013-09-24T09:00:00+02:00&quot;&gt;09.00&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/section&gt;&lt;section class=&quot;field field-name-field-room field-type-taxonomy-term-reference field-label-inline clearfix view-mode-teaser&quot;&gt;&lt;h2 class=&quot;field-label&quot;&gt;Raum:&amp;nbsp;&lt;/h2&gt;&lt;ul class=&quot;field-items&quot;&gt;&lt;li class=&quot;field-item even&quot;&gt;Kongress-Saal&lt;/li&gt;&lt;/ul&gt;&lt;/section&gt;&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden view-mode-teaser&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot; property=&quot;content:encoded&quot;&gt;&lt;p&gt;Moderator: Mirko Schrempp (Software &amp;amp; Support Media Gmbh)&lt;/p&gt;
+      &lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+    </description>
+    <pubDate>Tue, 27 Aug 2013 09:16:23 +0000</pubDate>
+    <tracks>
+      <track>Web</track>
+    </tracks>
+
+    <speakers>
+      <speaker>Matt Ellis</speaker>
+    </speakers>
+    <guid isPermaLink="false">694 at http://basta.net/2013</guid>
+  </session>
+  <session sessiontype="Session">
+    <title>Device to Cloud – Smart Products und Industrie 4.0</title>
+    <link>http://basta.net/2013/sessions/device-cloud-smart-products-und-industrie-40</link>
+    <description>
+      &lt;section class=&quot;field field-name-field-date field-type-datetime field-label-inline clearfix view-mode-teaser&quot;&gt;&lt;h2 class=&quot;field-label&quot;&gt;Zeit:&amp;nbsp;&lt;/h2&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;span class=&quot;date-display-single&quot;&gt;24. September 2013,  &lt;span class=&quot;date-display-start&quot; property=&quot;dc:date&quot; datatype=&quot;xsd:dateTime&quot; content=&quot;2013-09-24T09:00:00+02:00&quot;&gt;09.00&lt;/span&gt; bis &lt;span class=&quot;date-display-end&quot; property=&quot;dc:date&quot; datatype=&quot;xsd:dateTime&quot; content=&quot;2013-09-24T09:45:00+02:00&quot;&gt;09.45&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/section&gt;&lt;section class=&quot;field field-name-field-room field-type-taxonomy-term-reference field-label-inline clearfix view-mode-teaser&quot;&gt;&lt;h2 class=&quot;field-label&quot;&gt;Raum:&amp;nbsp;&lt;/h2&gt;&lt;ul class=&quot;field-items&quot;&gt;&lt;li class=&quot;field-item even&quot;&gt;Kongress-Saal&lt;/li&gt;&lt;/ul&gt;&lt;/section&gt;&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden view-mode-teaser&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot; property=&quot;content:encoded&quot;&gt;&lt;p&gt;Internetfähige Küchengeräte und besonders der selbsttätig buchhaltende und bestellende Kühlschrank waren schon im Dotcom-Boom der späten 1990er-Jahre ein beliebtes Thema für visionäre Spekulationen. Jetzt, rund fünfzehn Jahre später, scheint nun genug Bewegung in der Industrie, um aus der Vision von damals, nämlich Geräte des täglichen Lebens mit dem Internet zu verbinden, langsam Realität zu werden. Allerdings mag der Kühlschrank nicht unbedingt vornan und im Zentrum stehen.&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;view view-sessions view-id-sessions view-display-id-entity_view_1 view-dom-id-de3197c04e49dff4cf414b5b2de48d3a&quot;&gt;
+
+
+
+      &lt;div class=&quot;view-content&quot;&gt;
+      &lt;div class=&quot;views-row views-row-1 views-row-odd views-row-first views-row-last&quot;&gt;
+
+      &lt;div class=&quot;views-field views-field-field-picture&quot;&gt;        &lt;div class=&quot;field-content&quot;&gt;&lt;a href=&quot;/2013/speakers/clemens-vasters&quot;&gt;&lt;img typeof=&quot;foaf:Image&quot; class=&quot;image-style-speaker-bild-sessionpage&quot; src=&quot;http://basta.net/2013/sites/default/files/styles/speaker_bild_sessionpage/public/clemens-press-2013.jpg?itok=fH0HOufT&quot; width=&quot;50&quot; height=&quot;50&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/div&gt;  &lt;/div&gt;
+      &lt;div class=&quot;views-field views-field-title&quot;&gt;        &lt;span class=&quot;field-content&quot;&gt;&lt;a href=&quot;/2013/speakers/clemens-vasters&quot;&gt;Clemens Vasters&lt;/a&gt;&lt;/span&gt;  &lt;/div&gt;
+      &lt;div class=&quot;views-field views-field-field-firma&quot;&gt;        &lt;div class=&quot;field-content&quot;&gt;Microsoft&lt;/div&gt;  &lt;/div&gt;  &lt;/div&gt;
+      &lt;/div&gt;
+
+
+
+
+
+
+      &lt;/div&gt;
+    </description>
+    <pubDate>Tue, 27 Aug 2013 08:41:11 +0000</pubDate>
+    <tracks>
+      <track>Web</track>
+    </tracks>
+
+    <speakers>
+      <speaker>Clemens Vasters</speaker>
+    </speakers>
+    <guid isPermaLink="false">693 at http://basta.net/2013</guid>
+  </session>
+  <session sessiontype="Session">
+    <title>WinRT mit C++</title>
+    <link>http://basta.net/2013/node/689</link>
+    <description>
+      &lt;section class=&quot;field field-name-field-date field-type-datetime field-label-inline clearfix view-mode-teaser&quot;&gt;&lt;h2 class=&quot;field-label&quot;&gt;Zeit:&amp;nbsp;&lt;/h2&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;span class=&quot;date-display-single&quot;&gt;24. September 2013,  &lt;span class=&quot;date-display-start&quot; property=&quot;dc:date&quot; datatype=&quot;xsd:dateTime&quot; content=&quot;2013-09-24T17:45:00+02:00&quot;&gt;17.45&lt;/span&gt; bis &lt;span class=&quot;date-display-end&quot; property=&quot;dc:date&quot; datatype=&quot;xsd:dateTime&quot; content=&quot;2013-09-24T19:00:00+02:00&quot;&gt;19.00&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/section&gt;&lt;section class=&quot;field field-name-field-room field-type-taxonomy-term-reference field-label-inline clearfix view-mode-teaser&quot;&gt;&lt;h2 class=&quot;field-label&quot;&gt;Raum:&amp;nbsp;&lt;/h2&gt;&lt;ul class=&quot;field-items&quot;&gt;&lt;li class=&quot;field-item even&quot;&gt;Gutenbergsaal 2&lt;/li&gt;&lt;/ul&gt;&lt;/section&gt;&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden view-mode-teaser&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot; property=&quot;content:encoded&quot;&gt;&lt;p&gt;Wer Windows-8-Anwendungen ohne Zwischenschichten entwickeln will, kann mit C++/CX direkt auf WinRT-Komponenten zugreifen und alle gebotenen Möglichkeiten mit maximaler Performanz nutzen. In dieser Session erleben Sie eine Einführung in die Konzepte von C++/CX und die Implementierung von nativen Windows-8-Anwendungen.&lt;/p&gt;
+      &lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;view view-sessions view-id-sessions view-display-id-entity_view_1 view-dom-id-bdf2ca44fde1b4b1c64d0be7ca357abe&quot;&gt;
+
+
+
+      &lt;div class=&quot;view-content&quot;&gt;
+      &lt;div class=&quot;views-row views-row-1 views-row-odd views-row-first views-row-last&quot;&gt;
+
+      &lt;div class=&quot;views-field views-field-field-picture&quot;&gt;        &lt;div class=&quot;field-content&quot;&gt;&lt;a href=&quot;/2013/node/687&quot;&gt;&lt;img typeof=&quot;foaf:Image&quot; class=&quot;image-style-speaker-bild-sessionpage&quot; src=&quot;http://basta.net/2013/sites/default/files/styles/speaker_bild_sessionpage/public/speaker_ori_2.jpg?itok=_7J70j2W&quot; width=&quot;50&quot; height=&quot;50&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/div&gt;  &lt;/div&gt;
+      &lt;div class=&quot;views-field views-field-title&quot;&gt;        &lt;span class=&quot;field-content&quot;&gt;&lt;a href=&quot;/2013/node/687&quot;&gt;Peter Pohmann&lt;/a&gt;&lt;/span&gt;  &lt;/div&gt;
+      &lt;div class=&quot;views-field views-field-field-firma&quot;&gt;        &lt;div class=&quot;field-content&quot;&gt;dataweb GmbH&lt;/div&gt;  &lt;/div&gt;  &lt;/div&gt;
+      &lt;/div&gt;
+
+
+
+
+
+
+      &lt;/div&gt;
+    </description>
+    <pubDate>Wed, 21 Aug 2013 15:23:06 +0000</pubDate>
+    <tracks>
+      <track>Embedded / C++</track>
+    </tracks>
+
+    <speakers>
+      <speaker>Peter Pohmann</speaker>
+    </speakers>
+    <guid isPermaLink="false">689 at http://basta.net/2013</guid>
+  </session>
+  <session sessiontype="Session">
+    <title>Component Object Model</title>
+    <link>http://basta.net/2013/node/688</link>
+    <description>
+      &lt;section class=&quot;field field-name-field-date field-type-datetime field-label-inline clearfix view-mode-teaser&quot;&gt;&lt;h2 class=&quot;field-label&quot;&gt;Zeit:&amp;nbsp;&lt;/h2&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;span class=&quot;date-display-single&quot;&gt;24. September 2013,  &lt;span class=&quot;date-display-start&quot; property=&quot;dc:date&quot; datatype=&quot;xsd:dateTime&quot; content=&quot;2013-09-24T10:00:00+02:00&quot;&gt;10.00&lt;/span&gt; bis &lt;span class=&quot;date-display-end&quot; property=&quot;dc:date&quot; datatype=&quot;xsd:dateTime&quot; content=&quot;2013-09-24T11:15:00+02:00&quot;&gt;11.15&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/section&gt;&lt;section class=&quot;field field-name-field-room field-type-taxonomy-term-reference field-label-inline clearfix view-mode-teaser&quot;&gt;&lt;h2 class=&quot;field-label&quot;&gt;Raum:&amp;nbsp;&lt;/h2&gt;&lt;ul class=&quot;field-items&quot;&gt;&lt;li class=&quot;field-item even&quot;&gt;Dijonsaal&lt;/li&gt;&lt;/ul&gt;&lt;/section&gt;&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden view-mode-teaser&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot; property=&quot;content:encoded&quot;&gt;&lt;p&gt;Das Component Object Model hatten die meisten Entwickler schon länger nicht mehr im Blickfeld, aber Totgeglaubte leben ja bekanntlich länger. In dieser Session führen wir uns die Grundkonzepte dieser Technologie wieder einmal vor Augen und sehen uns an, was es unter Windows 8 an Neuem gibt.&lt;/p&gt;
+      &lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;view view-sessions view-id-sessions view-display-id-entity_view_1 view-dom-id-28d4ec2d8468018525dccf9319fe91ce&quot;&gt;
+
+
+
+      &lt;div class=&quot;view-content&quot;&gt;
+      &lt;div class=&quot;views-row views-row-1 views-row-odd views-row-first views-row-last&quot;&gt;
+
+      &lt;div class=&quot;views-field views-field-field-picture&quot;&gt;        &lt;div class=&quot;field-content&quot;&gt;&lt;a href=&quot;/2013/node/687&quot;&gt;&lt;img typeof=&quot;foaf:Image&quot; class=&quot;image-style-speaker-bild-sessionpage&quot; src=&quot;http://basta.net/2013/sites/default/files/styles/speaker_bild_sessionpage/public/speaker_ori_2.jpg?itok=_7J70j2W&quot; width=&quot;50&quot; height=&quot;50&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/div&gt;  &lt;/div&gt;
+      &lt;div class=&quot;views-field views-field-title&quot;&gt;        &lt;span class=&quot;field-content&quot;&gt;&lt;a href=&quot;/2013/node/687&quot;&gt;Peter Pohmann&lt;/a&gt;&lt;/span&gt;  &lt;/div&gt;
+      &lt;div class=&quot;views-field views-field-field-firma&quot;&gt;        &lt;div class=&quot;field-content&quot;&gt;dataweb GmbH&lt;/div&gt;  &lt;/div&gt;  &lt;/div&gt;
+      &lt;/div&gt;
+
+
+
+
+
+
+      &lt;/div&gt;
+    </description>
+    <pubDate>Wed, 21 Aug 2013 15:21:31 +0000</pubDate>
+    <tracks>
+      <track>Web</track>
+    </tracks>
+
+    <speakers>
+      <speaker>Peter Pohmann</speaker>
+    </speakers>
+    <guid isPermaLink="false">688 at http://basta.net/2013</guid>
+  </session>
+  <session sessiontype="Session">
+    <title>Auf der Jagd nach Performanceengpässen</title>
+    <link>http://basta.net/2013/node/686</link>
+    <description>
+      &lt;section class=&quot;field field-name-field-date field-type-datetime field-label-inline clearfix view-mode-teaser&quot;&gt;&lt;h2 class=&quot;field-label&quot;&gt;Zeit:&amp;nbsp;&lt;/h2&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;span class=&quot;date-display-single&quot;&gt;25. September 2013,  &lt;span class=&quot;date-display-start&quot; property=&quot;dc:date&quot; datatype=&quot;xsd:dateTime&quot; content=&quot;2013-09-25T14:00:00+02:00&quot;&gt;14.00&lt;/span&gt; bis &lt;span class=&quot;date-display-end&quot; property=&quot;dc:date&quot; datatype=&quot;xsd:dateTime&quot; content=&quot;2013-09-25T15:15:00+02:00&quot;&gt;15.15&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/section&gt;&lt;section class=&quot;field field-name-field-room field-type-taxonomy-term-reference field-label-inline clearfix view-mode-teaser&quot;&gt;&lt;h2 class=&quot;field-label&quot;&gt;Raum:&amp;nbsp;&lt;/h2&gt;&lt;ul class=&quot;field-items&quot;&gt;&lt;li class=&quot;field-item even&quot;&gt;Gutenbergsaal 2&lt;/li&gt;&lt;/ul&gt;&lt;/section&gt;&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden view-mode-teaser&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot; property=&quot;content:encoded&quot;&gt;&lt;p&gt;Auch erfahrene Entwickler stellen häufig fest, dass Performanceprobleme in ASP.NET-Anwendungen nicht immer dort zu finden sind, wo man sie zunächst vermutet. In Wirklichkeit kann man viel Zeit damit verschwenden, die wirklichen Ursachen im Code zu finden, wenn man sich dabei nur auf die Intuition verlässt. In dieser Session werden wir uns anhand von Beispielen anschauen, wie man mithilfe von Code-Profiling-Techniken Probleme beim Datenzugriff, falsche Verwendung von APIs und auch reine Codeprobleme aufspüren und lösen kann.&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;view view-sessions view-id-sessions view-display-id-entity_view_1 view-dom-id-0dfff1ca13b9dcaa32a0b4f3f74accb3&quot;&gt;
+
+
+
+      &lt;div class=&quot;view-content&quot;&gt;
+      &lt;div class=&quot;views-row views-row-1 views-row-odd views-row-first views-row-last&quot;&gt;
+
+      &lt;div class=&quot;views-field views-field-field-picture&quot;&gt;        &lt;div class=&quot;field-content&quot;&gt;&lt;a href=&quot;/2013/speakers/constantin-klein&quot;&gt;&lt;img typeof=&quot;foaf:Image&quot; class=&quot;image-style-speaker-bild-sessionpage&quot; src=&quot;http://basta.net/2013/sites/default/files/styles/speaker_bild_sessionpage/public/klein.jpg?itok=m3l34LSW&quot; width=&quot;50&quot; height=&quot;50&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/div&gt;  &lt;/div&gt;
+      &lt;div class=&quot;views-field views-field-title&quot;&gt;        &lt;span class=&quot;field-content&quot;&gt;&lt;a href=&quot;/2013/speakers/constantin-klein&quot;&gt;Constantin Klein&lt;/a&gt;&lt;/span&gt;  &lt;/div&gt;
+      &lt;div class=&quot;views-field views-field-field-firma&quot;&gt;        &lt;div class=&quot;field-content&quot;&gt;Freudenberg Forschungsdienste SE &amp;amp; Co. KG. &lt;/div&gt;  &lt;/div&gt;  &lt;/div&gt;
+      &lt;/div&gt;
+
+
+
+
+
+
+      &lt;/div&gt;
+    </description>
+    <pubDate>Wed, 21 Aug 2013 10:22:19 +0000</pubDate>
+    <tracks>
+      <track>Web</track>
+    </tracks>
+
+    <speakers>
+      <speaker>Constantin Klein</speaker>
+    </speakers>
+    <guid isPermaLink="false">686 at http://basta.net/2013</guid>
+  </session>
+  <session sessiontype="Session">
+    <title>TFS und Java – Ein SDK, das Türen öffnet</title>
+    <link>http://basta.net/2013/node/683</link>
+    <description>
+      &lt;section class=&quot;field field-name-field-date field-type-datetime field-label-inline clearfix view-mode-teaser&quot;&gt;&lt;h2 class=&quot;field-label&quot;&gt;Zeit:&amp;nbsp;&lt;/h2&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;span class=&quot;date-display-single&quot;&gt;24. September 2013,  &lt;span class=&quot;date-display-start&quot; property=&quot;dc:date&quot; datatype=&quot;xsd:dateTime&quot; content=&quot;2013-09-24T14:30:00+02:00&quot;&gt;14.30&lt;/span&gt; bis &lt;span class=&quot;date-display-end&quot; property=&quot;dc:date&quot; datatype=&quot;xsd:dateTime&quot; content=&quot;2013-09-24T15:45:00+02:00&quot;&gt;15.45&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/section&gt;&lt;section class=&quot;field field-name-field-room field-type-taxonomy-term-reference field-label-inline clearfix view-mode-teaser&quot;&gt;&lt;h2 class=&quot;field-label&quot;&gt;Raum:&amp;nbsp;&lt;/h2&gt;&lt;ul class=&quot;field-items&quot;&gt;&lt;li class=&quot;field-item even&quot;&gt;Gutenbergsaal 2&lt;/li&gt;&lt;/ul&gt;&lt;/section&gt;&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden view-mode-teaser&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot; property=&quot;content:encoded&quot;&gt;&lt;p&gt;Nicht nur mit der Bereitstellung eines entsprechenden Eclipse-Plug-ins hat Microsoft den TFS für den Zugriff aus der Java-Welt geöffnet. Vielmehr erlaubt das dabei entstandene SDK die Einbindung und Ansteuerung der mit dem TFS verbundenen Dienste. Diese Session klärt anhand einer Realimplementierung, wie das Java-SDK für TFS verwendet werden kann, welchen Funktionsumfang es bietet und welche Unterschiede es noch zu seinem SDK-Bruder aus der .NET-Welt gibt.&lt;/p&gt;
+      &lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;view view-sessions view-id-sessions view-display-id-entity_view_1 view-dom-id-9118d6c7ec465da5d59a185c9e5cc9d8&quot;&gt;
+
+
+
+      &lt;div class=&quot;view-content&quot;&gt;
+      &lt;div class=&quot;views-row views-row-1 views-row-odd views-row-first&quot;&gt;
+
+      &lt;div class=&quot;views-field views-field-field-picture&quot;&gt;        &lt;div class=&quot;field-content&quot;&gt;&lt;a href=&quot;/2013/node/682&quot;&gt;&lt;img typeof=&quot;foaf:Image&quot; class=&quot;image-style-speaker-bild-sessionpage&quot; src=&quot;http://basta.net/2013/sites/default/files/styles/speaker_bild_sessionpage/public/israel_denny_2.jpg?itok=teqCT21s&quot; width=&quot;50&quot; height=&quot;50&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/div&gt;  &lt;/div&gt;
+      &lt;div class=&quot;views-field views-field-title&quot;&gt;        &lt;span class=&quot;field-content&quot;&gt;&lt;a href=&quot;/2013/node/682&quot;&gt;Denny Israel&lt;/a&gt;&lt;/span&gt;  &lt;/div&gt;
+      &lt;div class=&quot;views-field views-field-field-firma&quot;&gt;        &lt;div class=&quot;field-content&quot;&gt;Saxonia Systems AG&lt;/div&gt;  &lt;/div&gt;  &lt;/div&gt;
+      &lt;div class=&quot;views-row views-row-2 views-row-even views-row-last&quot;&gt;
+
+      &lt;div class=&quot;views-field views-field-field-picture&quot;&gt;        &lt;div class=&quot;field-content&quot;&gt;&lt;a href=&quot;/2013/node/681&quot;&gt;&lt;img typeof=&quot;foaf:Image&quot; class=&quot;image-style-speaker-bild-sessionpage&quot; src=&quot;http://basta.net/2013/sites/default/files/styles/speaker_bild_sessionpage/public/wilk_thomas.jpg?itok=aN5Y3pVy&quot; width=&quot;50&quot; height=&quot;50&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/div&gt;  &lt;/div&gt;
+      &lt;div class=&quot;views-field views-field-title&quot;&gt;        &lt;span class=&quot;field-content&quot;&gt;&lt;a href=&quot;/2013/node/681&quot;&gt;Thomas Wilk&lt;/a&gt;&lt;/span&gt;  &lt;/div&gt;
+      &lt;div class=&quot;views-field views-field-field-firma&quot;&gt;        &lt;div class=&quot;field-content&quot;&gt;Saxonia Systems AG &lt;/div&gt;  &lt;/div&gt;  &lt;/div&gt;
+      &lt;/div&gt;
+
+
+
+
+
+
+      &lt;/div&gt;
+    </description>
+    <pubDate>Mon, 19 Aug 2013 14:33:46 +0000</pubDate>
+    <tracks>
+      <track>C#</track>
+    </tracks>
+
+    <speakers>
+      <speaker>Denny Israel</speaker>
+      <speaker>Thomas Wilk</speaker>
+    </speakers>
+    <guid isPermaLink="false">683 at http://basta.net/2013</guid>
+  </session>
+  <session sessiontype="Session">
+    <title>Verschlüsselung war gestern … AppOnChip ist heute</title>
+    <link>http://basta.net/2013/node/679</link>
+    <description>
+      &lt;section class=&quot;field field-name-field-date field-type-datetime field-label-inline clearfix view-mode-teaser&quot;&gt;&lt;h2 class=&quot;field-label&quot;&gt;Zeit:&amp;nbsp;&lt;/h2&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;span class=&quot;date-display-single&quot;&gt;25. September 2013,  &lt;span class=&quot;date-display-start&quot; property=&quot;dc:date&quot; datatype=&quot;xsd:dateTime&quot; content=&quot;2013-09-25T14:00:00+02:00&quot;&gt;14.00&lt;/span&gt; bis &lt;span class=&quot;date-display-end&quot; property=&quot;dc:date&quot; datatype=&quot;xsd:dateTime&quot; content=&quot;2013-09-25T15:15:00+02:00&quot;&gt;15.15&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/section&gt;&lt;section class=&quot;field field-name-field-room field-type-taxonomy-term-reference field-label-inline clearfix view-mode-teaser&quot;&gt;&lt;h2 class=&quot;field-label&quot;&gt;Raum:&amp;nbsp;&lt;/h2&gt;&lt;ul class=&quot;field-items&quot;&gt;&lt;li class=&quot;field-item even&quot;&gt;Dijonsaal&lt;/li&gt;&lt;/ul&gt;&lt;/section&gt;&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden view-mode-teaser&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot; property=&quot;content:encoded&quot;&gt;&lt;p&gt;Will man seine Applikation vor Reverse-Engineering-Angriffen schützen, ist das Verschlüsseln der relevanten Codeteile ein guter Anfang – aber am Ende benötigt die CPU doch die entschlüsselten Instruktionen zur Ausführung. Der Angreifer hat dann durchaus eine Chance, an die geschützten Instruktionen zu kommen. Will man die Latte noch höher legen, sind neue Techniken gefragt. Wir betrachten dazu eine Methode, die relevante Codeteile automatisch aus einer kompilierten Anwendung extrahieren kann und sie für die Ausführung in einer sicheren isolierten Hardwareumgebung vorbereitet.&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;view view-sessions view-id-sessions view-display-id-entity_view_1 view-dom-id-8672e6e7eaf0c5a2095ff0998ad6d542&quot;&gt;
+
+
+
+      &lt;div class=&quot;view-content&quot;&gt;
+      &lt;div class=&quot;views-row views-row-1 views-row-odd views-row-first views-row-last&quot;&gt;
+
+      &lt;div class=&quot;views-field views-field-field-picture&quot;&gt;        &lt;div class=&quot;field-content&quot;&gt;&lt;a href=&quot;/2013/node/678&quot;&gt;&lt;img typeof=&quot;foaf:Image&quot; class=&quot;image-style-speaker-bild-sessionpage&quot; src=&quot;http://basta.net/2013/sites/default/files/styles/speaker_bild_sessionpage/public/sfnt_peter_garba_basta2013.jpg?itok=XeW3ZkfM&quot; width=&quot;50&quot; height=&quot;50&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/div&gt;  &lt;/div&gt;
+      &lt;div class=&quot;views-field views-field-title&quot;&gt;        &lt;span class=&quot;field-content&quot;&gt;&lt;a href=&quot;/2013/node/678&quot;&gt;Peter Garba&lt;/a&gt;&lt;/span&gt;  &lt;/div&gt;
+      &lt;div class=&quot;views-field views-field-field-firma&quot;&gt;        &lt;div class=&quot;field-content&quot;&gt;SafeNet&lt;/div&gt;  &lt;/div&gt;  &lt;/div&gt;
+      &lt;/div&gt;
+
+
+
+
+
+
+      &lt;/div&gt;
+    </description>
+    <pubDate>Tue, 13 Aug 2013 10:20:53 +0000</pubDate>
+    <tracks>
+      <track>Embedded / C++</track>
+    </tracks>
+
+    <speakers>
+      <speaker>Peter Garba</speaker>
+    </speakers>
+    <guid isPermaLink="false">679 at http://basta.net/2013</guid>
+  </session>
+  <session sessiontype="Session">
+    <title>Dick im Geschäft: Windows-Store-Apps im Enterprise-Umfeld</title>
+    <link>http://basta.net/2013/node/677</link>
+    <description>
+      &lt;section class=&quot;field field-name-field-date field-type-datetime field-label-inline clearfix view-mode-teaser&quot;&gt;&lt;h2 class=&quot;field-label&quot;&gt;Zeit:&amp;nbsp;&lt;/h2&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;span class=&quot;date-display-single&quot;&gt;25. September 2013,  &lt;span class=&quot;date-display-start&quot; property=&quot;dc:date&quot; datatype=&quot;xsd:dateTime&quot; content=&quot;2013-09-25T11:45:00+02:00&quot;&gt;11.45&lt;/span&gt; bis &lt;span class=&quot;date-display-end&quot; property=&quot;dc:date&quot; datatype=&quot;xsd:dateTime&quot; content=&quot;2013-09-25T12:30:00+02:00&quot;&gt;12.30&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/section&gt;&lt;section class=&quot;field field-name-field-room field-type-taxonomy-term-reference field-label-inline clearfix view-mode-teaser&quot;&gt;&lt;h2 class=&quot;field-label&quot;&gt;Raum:&amp;nbsp;&lt;/h2&gt;&lt;ul class=&quot;field-items&quot;&gt;&lt;li class=&quot;field-item even&quot;&gt;Kongress-Saal&lt;/li&gt;&lt;/ul&gt;&lt;/section&gt;&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden view-mode-teaser&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot; property=&quot;content:encoded&quot;&gt;&lt;p&gt;Die Anzahl an Consumer-Apps für Windows 8 nimmt rasant zu. Doch wie sieht es eigentlich im Enterprise-Umfeld aus? Die Erfahrung zeigt, dass viele Unternehmen ihre IT-Landschaft erst auf Windows 7 migriert haben. Clientanwendungen werden heute nach wie vor mit der WPF entwickelt. Doch sobald Unternehmen Windows-8-Geräte einführen, werden auch Windows-Store-Apps ein Thema.&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;view view-sessions view-id-sessions view-display-id-entity_view_1 view-dom-id-d47e34558878ca37bf4339419c903496&quot;&gt;
+
+
+
+      &lt;div class=&quot;view-content&quot;&gt;
+      &lt;div class=&quot;views-row views-row-1 views-row-odd views-row-first views-row-last&quot;&gt;
+
+      &lt;div class=&quot;views-field views-field-field-picture&quot;&gt;        &lt;div class=&quot;field-content&quot;&gt;&lt;a href=&quot;/2013/speakers/thomas-claudius-huber&quot;&gt;&lt;img typeof=&quot;foaf:Image&quot; class=&quot;image-style-speaker-bild-sessionpage&quot; src=&quot;http://basta.net/2013/sites/default/files/styles/speaker_bild_sessionpage/public/huber.jpg?itok=hGNSlFGm&quot; width=&quot;50&quot; height=&quot;50&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/div&gt;  &lt;/div&gt;
+      &lt;div class=&quot;views-field views-field-title&quot;&gt;        &lt;span class=&quot;field-content&quot;&gt;&lt;a href=&quot;/2013/speakers/thomas-claudius-huber&quot;&gt;Thomas Claudius Huber&lt;/a&gt;&lt;/span&gt;  &lt;/div&gt;
+      &lt;div class=&quot;views-field views-field-field-firma&quot;&gt;        &lt;div class=&quot;field-content&quot;&gt;Trivadis AG&lt;/div&gt;  &lt;/div&gt;  &lt;/div&gt;
+      &lt;/div&gt;
+
+
+
+
+
+
+      &lt;/div&gt;
+    </description>
+    <pubDate>Mon, 12 Aug 2013 07:44:46 +0000</pubDate>
+    <tracks>
+      <track>Web</track>
+    </tracks>
+    <speakers>
+      <speaker>Thomas Claudius Huber</speaker>
+    </speakers>
+    <guid isPermaLink="false">677 at http://basta.net/2013</guid>
+  </session>
+  <session sessiontype="Workshop">
+    <title>Flexible Versionsverwaltung mit TFS</title>
+    <link>http://basta.net/2013/sessions/flexible-versionsverwaltung-mit-tfs</link>
+    <description>
+      &lt;section class=&quot;field field-name-field-date field-type-datetime field-label-inline clearfix view-mode-teaser&quot;&gt;&lt;h2 class=&quot;field-label&quot;&gt;Zeit:&amp;nbsp;&lt;/h2&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;span class=&quot;date-display-single&quot;&gt;25. September 2013,  &lt;span class=&quot;date-display-start&quot; property=&quot;dc:date&quot; datatype=&quot;xsd:dateTime&quot; content=&quot;2013-09-25T17:15:00+02:00&quot;&gt;17.15&lt;/span&gt; bis &lt;span class=&quot;date-display-end&quot; property=&quot;dc:date&quot; datatype=&quot;xsd:dateTime&quot; content=&quot;2013-09-25T18:30:00+02:00&quot;&gt;18.30&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/section&gt;&lt;section class=&quot;field field-name-field-room field-type-taxonomy-term-reference field-label-inline clearfix view-mode-teaser&quot;&gt;&lt;h2 class=&quot;field-label&quot;&gt;Raum:&amp;nbsp;&lt;/h2&gt;&lt;ul class=&quot;field-items&quot;&gt;&lt;li class=&quot;field-item even&quot;&gt;Dijonsaal&lt;/li&gt;&lt;/ul&gt;&lt;/section&gt;&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden view-mode-teaser&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot; property=&quot;content:encoded&quot;&gt;&lt;p&gt;Team Foundation Server bietet deutlich mehr als nur Versionskontrolle. In dieser Session fokussieren wir uns aber genau auf diesen Bereich. Mit der Ankündigung von Git im Team Foundation Server als auch der Unterstützung von lokalen Git Repositories in Visual Studio ergeben sich komplett neue Szeanarien – auch für heterogene Entwicklungsteams. Aufbauend auf den grundlegenden Arbeitsweisen mit Git in Visual Studio lernen Sie auch die Integration in den ALM-Zyklus mit TFS kennen.&lt;/p&gt;
+      &lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;view view-sessions view-id-sessions view-display-id-entity_view_1 view-dom-id-33d4b72bcd7d29f1f9dd73034a022481&quot;&gt;
+
+
+
+      &lt;div class=&quot;view-content&quot;&gt;
+      &lt;div class=&quot;views-row views-row-1 views-row-odd views-row-first views-row-last&quot;&gt;
+
+      &lt;div class=&quot;views-field views-field-field-picture&quot;&gt;        &lt;div class=&quot;field-content&quot;&gt;&lt;a href=&quot;/2013/speakers/artur-speth&quot;&gt;&lt;img typeof=&quot;foaf:Image&quot; class=&quot;image-style-speaker-bild-sessionpage&quot; src=&quot;http://basta.net/2013/sites/default/files/styles/speaker_bild_sessionpage/public/dsc00920.jpg?itok=PjH9nEig&quot; width=&quot;50&quot; height=&quot;50&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/div&gt;  &lt;/div&gt;
+      &lt;div class=&quot;views-field views-field-title&quot;&gt;        &lt;span class=&quot;field-content&quot;&gt;&lt;a href=&quot;/2013/speakers/artur-speth&quot;&gt;Artur Speth &lt;/a&gt;&lt;/span&gt;  &lt;/div&gt;
+      &lt;div class=&quot;views-field views-field-field-firma&quot;&gt;        &lt;div class=&quot;field-content&quot;&gt;Microsoft&lt;/div&gt;  &lt;/div&gt;  &lt;/div&gt;
+      &lt;/div&gt;
+
+
+
+
+
+
+      &lt;/div&gt;
+    </description>
+    <pubDate>Wed, 31 Jul 2013 12:48:49 +0000</pubDate>
+    <tracks>
+      <track>Web</track>
+    </tracks>
+    <speakers>
+      <speaker>Artur Speth</speaker>
+    </speakers>
+    <guid isPermaLink="false">673 at http://basta.net/2013</guid>
+  </session>
+</sessions>

@@ -1,0 +1,19 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="/SharedUI;component/Controls/HeaderedArea.xaml"/>
+        <ResourceDictionary Source="/SharedUI;component/Controls/CommandHeader.xaml"/>
+        <ResourceDictionary Source="/SharedUI;component/Controls/AppButton.xaml"/>
+        <ResourceDictionary Source="/SharedUI;component/Controls/Flyouts/NavigationView.xaml"/>
+        <ResourceDictionary Source="/SharedUI;component/Controls/Flyouts/FlyoutContainer.xaml"/>
+        <ResourceDictionary Source="/SharedUI;component/Controls/Flyouts/FlyoutPanel.xaml"/>
+        <ResourceDictionary Source="/SharedUI;component/Controls/Flyouts/FlyoutMessageBar.xaml"/>
+        <ResourceDictionary Source="/SharedUI;component/Controls/Flyouts/NavigationButton.xaml"/>
+        <ResourceDictionary Source="/SharedUI;component/Controls/Flyouts/PopupHost.xaml"/>
+        <ResourceDictionary Source="/SharedUI;component/Controls/Flyouts/MessageDialog.xaml"/>
+        <ResourceDictionary Source="/SharedUI;component/Controls/RatingControls/Rating.xaml"/>
+        <ResourceDictionary Source="/SharedUI;component/Controls/RatingControls/RatingItem.xaml"/>
+    </ResourceDictionary.MergedDictionaries>
+
+</ResourceDictionary>

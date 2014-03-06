@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="60a805d4-82fa-41d6-a43e-0298f4a97974" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>true</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.Generic.List`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:55152/SessionService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="SessionService.wsdl" MetadataType="Wsdl" ID="d5f9a981-fc80-4217-8e32-6017f3a763ed" SourceId="1" SourceUrl="http://localhost:55152/SessionService.svc?wsdl" />
+    <MetadataFile FileName="SessionService2.xsd" MetadataType="Schema" ID="0be2e2f2-f5ac-4509-80ca-73531735abd4" SourceId="1" SourceUrl="http://localhost:55152/SessionService.svc?xsd=xsd1" />
+    <MetadataFile FileName="SessionService.xsd" MetadataType="Schema" ID="df05123b-9264-4381-bda6-347205995918" SourceId="1" SourceUrl="http://localhost:55152/SessionService.svc?xsd=xsd0" />
+    <MetadataFile FileName="SessionService3.xsd" MetadataType="Schema" ID="b98421da-9a47-41b2-b819-7dff4daab047" SourceId="1" SourceUrl="http://localhost:55152/SessionService.svc?xsd=xsd3" />
+    <MetadataFile FileName="SessionService1.xsd" MetadataType="Schema" ID="d1bed641-46e2-4c66-a5d1-df7f3d67ea88" SourceId="1" SourceUrl="http://localhost:55152/SessionService.svc?xsd=xsd2" />
+    <MetadataFile FileName="SessionService.disco" MetadataType="Disco" ID="a8ad681c-0347-4137-8205-a1c322fe28f5" SourceId="1" SourceUrl="http://localhost:55152/SessionService.svc?disco" />
+    <MetadataFile FileName="SessionService4.xsd" MetadataType="Schema" ID="5c1c23ed-d1d2-4d95-9da8-f80c9662e7e0" SourceId="1" SourceUrl="http://localhost:55152/SessionService.svc?xsd=xsd5" />
+    <MetadataFile FileName="SessionService41.xsd" MetadataType="Schema" ID="9f9de2a3-a8da-427f-b53e-fc2131e05fdf" SourceId="1" SourceUrl="http://localhost:55152/SessionService.svc?xsd=xsd4" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
