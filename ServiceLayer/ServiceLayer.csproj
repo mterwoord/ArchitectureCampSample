@@ -94,6 +94,11 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ApiControllers\ScheduleController.cs" />
+    <Compile Include="ApiControllers\RatingsController.cs" />
+    <Compile Include="ApiControllers\TracksController.cs" />
+    <Compile Include="ApiControllers\SpeakersController.cs" />
+    <Compile Include="ApiControllers\SessionsController.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="FaultMessage.cs" />
     <Compile Include="Global.asax.cs">
@@ -115,7 +120,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="ApiControllers\" />
     <Folder Include="App_Data\" />
   </ItemGroup>
   <ItemGroup>
