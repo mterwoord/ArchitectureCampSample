@@ -1,12 +1,11 @@
-﻿using System.Runtime.Serialization;
-using System.Xml.Serialization;
-using EndToEnd.StaticResources;
-using System;
+﻿using System;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Reflection;
+using System.Runtime.Serialization;
+using System.Xml.Serialization;
 
 namespace EndToEnd.DataLayer.Models {
 

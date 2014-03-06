@@ -1,5 +1,5 @@
-﻿using System;
-using Contracts;
+﻿using Contracts;
+using System;
 
 namespace Shell.Models
 {

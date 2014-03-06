@@ -4,7 +4,6 @@ using System;
 using System.ComponentModel.Composition.Hosting;
 using System.ComponentModel.Composition.Registration;
 using System.IO;
-using System.Linq.Expressions;
 using System.Reflection;
 
 namespace Shell.Services

@@ -1,20 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using EndToEnd.DataLayer.Context;
+using EndToEnd.DataLayer.Models;
+using EndToEnd.DataLayer.Validation;
+using System;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Data.Entity;
-using System.Diagnostics;
-using System.Globalization;
 using System.IO;
 using System.Linq;
-using System.Net;
 using System.Xml.Linq;
-using Microsoft.SqlServer.Server;
-using System.Security.Cryptography;
-using System.Text;
-using EndToEnd.DataLayer.Context;
-using EndToEnd.DataLayer.Models;
-using System.Reflection;
-using System.ComponentModel.DataAnnotations.Schema;
-using EndToEnd.DataLayer.Validation;
 
 namespace EndToEnd.DatabaseInitializer.Setup {
 

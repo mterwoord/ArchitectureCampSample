@@ -1,10 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Configuration;
 using System.Data.Entity;
 using System.Threading;
 using System.Web;
-using System.Web.Configuration;
 
 namespace EndToEnd.DataLayer.Context {
   /// <summary>

@@ -1,10 +1,8 @@
-﻿using System;
-using System.Linq;
-using System.ServiceModel;
+﻿using BusinessLayer.Models;
 using EndToEnd.BusinessLayer;
 using EndToEnd.DataLayer.Models;
 using System.Collections.Generic;
-using BusinessLayer.Models;
+using System.ServiceModel;
 
 namespace ServiceLayer {
   // NOTE: You can use the "Rename" command on the "Refactor" menu to change the class name "SessionService" in code, svc and config file together.

@@ -1,7 +1,5 @@
 ﻿using EndToEnd.DataLayer.Context;
 using System;
-using System.Globalization;
-using System.Linq;
 
 namespace EndToEnd.BusinessLayer {
 

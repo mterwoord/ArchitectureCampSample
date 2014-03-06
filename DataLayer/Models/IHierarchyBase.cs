@@ -1,5 +1,4 @@
-﻿using System;
-
+﻿
 namespace EndToEnd.DataLayer.Models {
   public interface IHierarchyBase<T> {
     System.Collections.Generic.List<T> Children { get; set; }

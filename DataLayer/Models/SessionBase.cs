@@ -1,15 +1,12 @@
-﻿using System.Runtime.Serialization;
-using System.Xml;
-using System.Xml.Schema;
-using System.Xml.Serialization;
-using EndToEnd.DataLayer.Validation;
+﻿using EndToEnd.DataLayer.Validation;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Runtime.Serialization;
+using System.Xml;
+using System.Xml.Serialization;
 
 namespace EndToEnd.DataLayer.Models {
 

@@ -1,5 +1,4 @@
-﻿using SharedUI;
-using Shell.Services;
+﻿using Shell.Services;
 
 namespace Shell
 {

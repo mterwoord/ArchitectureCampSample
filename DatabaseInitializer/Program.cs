@@ -1,13 +1,11 @@
-﻿using System.IO;
-using EndToEnd.DatabaseInitializer.Setup;
+﻿using EndToEnd.DatabaseInitializer.Setup;
 using EndToEnd.DataLayer.Context;
 using EndToEnd.DataLayer.Models;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
+using System.IO;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Xml.Serialization;
 
 namespace EndToEnd.DatabaseInitializer {

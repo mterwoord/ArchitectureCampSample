@@ -1,16 +1,11 @@
 ﻿using Contracts;
-using RatingModule;
 using Services.SessionServiceReference;
 using System;
-using System.Linq;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
-using System.ServiceModel;
-using System.Threading.Tasks;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Media;
 using System.ComponentModel.Composition;
+using System.Linq;
+using System.Windows.Data;
 
 namespace ImagesModule.ViewModels
 {

@@ -1,16 +1,12 @@
 ﻿using Contracts;
 using Services.SessionServiceReference;
-using SpeakerModule;
 using System;
-using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.ComponentModel.Composition;
-using System.Linq;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Data;
-using System.Windows.Media.Imaging;
 
 namespace ImagesModule.ViewModels
 {

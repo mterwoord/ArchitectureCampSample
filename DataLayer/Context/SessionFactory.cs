@@ -1,9 +1,5 @@
 ﻿using EndToEnd.DataLayer.Models;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace EndToEnd.DataLayer.Context {
   public static class SessionFactory {

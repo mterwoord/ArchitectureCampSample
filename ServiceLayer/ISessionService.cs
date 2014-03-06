@@ -1,13 +1,8 @@
-﻿using System.ServiceModel.Web;
-using EndToEnd.BusinessLayer;
+﻿using BusinessLayer.Models;
 using EndToEnd.DataLayer.Models;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Runtime.Serialization;
 using System.ServiceModel;
-using System.Text;
-using BusinessLayer.Models;
+using System.ServiceModel.Web;
 
 namespace ServiceLayer {
   // NOTE: You can use the "Rename" command on the "Refactor" menu to change the interface name "ISessionService" in both code and config file together.
