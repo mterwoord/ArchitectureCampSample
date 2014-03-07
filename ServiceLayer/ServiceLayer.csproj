@@ -94,6 +94,7 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ApiControllers\SlotsController.cs" />
     <Compile Include="ApiControllers\ScheduleController.cs" />
     <Compile Include="ApiControllers\RatingsController.cs" />
     <Compile Include="ApiControllers\TracksController.cs" />
