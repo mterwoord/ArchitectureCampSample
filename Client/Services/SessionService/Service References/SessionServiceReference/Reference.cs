@@ -424,7 +424,7 @@ namespace Services.SessionServiceReference
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="Slot", Namespace="http://schemas.datacontract.org/2004/07/EndToEnd.DataLayer.Models")]
-    [System.SerializableAttribute()]
+    //[System.SerializableAttribute()]
     public partial class Slot : Services.SessionServiceReference.EntityBase {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
@@ -1065,299 +1065,299 @@ namespace Services.SessionServiceReference
     public interface ISessionServiceChannel : Services.SessionServiceReference.ISessionService, System.ServiceModel.IClientChannel {
     }
     
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public partial class SessionServiceClient : System.ServiceModel.ClientBase<Services.SessionServiceReference.ISessionService>, Services.SessionServiceReference.ISessionService {
+    //[System.Diagnostics.DebuggerStepThroughAttribute()]
+    //[System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    //public partial class SessionServiceClient : System.ServiceModel.ClientBase<Services.SessionServiceReference.ISessionService>, Services.SessionServiceReference.ISessionService {
         
-        public SessionServiceClient() {
-        }
-        
-        public SessionServiceClient(string endpointConfigurationName) : 
-                base(endpointConfigurationName) {
-        }
-        
-        public SessionServiceClient(string endpointConfigurationName, string remoteAddress) : 
-                base(endpointConfigurationName, remoteAddress) {
-        }
-        
-        public SessionServiceClient(string endpointConfigurationName, System.ServiceModel.EndpointAddress remoteAddress) : 
-                base(endpointConfigurationName, remoteAddress) {
-        }
-        
-        public SessionServiceClient(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) : 
-                base(binding, remoteAddress) {
-        }
-        
-        public System.Collections.ObjectModel.ObservableCollection<Services.SessionServiceReference.Speaker> GetSpeakerList() {
-            return base.Channel.GetSpeakerList();
-        }
-        
-        public System.Threading.Tasks.Task<System.Collections.ObjectModel.ObservableCollection<Services.SessionServiceReference.Speaker>> GetSpeakerListAsync() {
-            return base.Channel.GetSpeakerListAsync();
-        }
-        
-        public Services.SessionServiceReference.Speaker GetSpeakerById(int id) {
-            return base.Channel.GetSpeakerById(id);
-        }
-        
-        public System.Threading.Tasks.Task<Services.SessionServiceReference.Speaker> GetSpeakerByIdAsync(int id) {
-            return base.Channel.GetSpeakerByIdAsync(id);
-        }
-        
-        public Services.SessionServiceReference.Speaker SearchSpeakerByName(string name) {
-            return base.Channel.SearchSpeakerByName(name);
-        }
-        
-        public System.Threading.Tasks.Task<Services.SessionServiceReference.Speaker> SearchSpeakerByNameAsync(string name) {
-            return base.Channel.SearchSpeakerByNameAsync(name);
-        }
-        
-        public Services.SessionServiceReference.Speaker AddSpeaker(Services.SessionServiceReference.Speaker speaker) {
-            return base.Channel.AddSpeaker(speaker);
-        }
-        
-        public System.Threading.Tasks.Task<Services.SessionServiceReference.Speaker> AddSpeakerAsync(Services.SessionServiceReference.Speaker speaker) {
-            return base.Channel.AddSpeakerAsync(speaker);
-        }
-        
-        public void UpdateSpeaker(Services.SessionServiceReference.Speaker speaker) {
-            base.Channel.UpdateSpeaker(speaker);
-        }
-        
-        public System.Threading.Tasks.Task UpdateSpeakerAsync(Services.SessionServiceReference.Speaker speaker) {
-            return base.Channel.UpdateSpeakerAsync(speaker);
-        }
-        
-        public void DeleteSpeaker(int id) {
-            base.Channel.DeleteSpeaker(id);
-        }
-        
-        public System.Threading.Tasks.Task DeleteSpeakerAsync(int id) {
-            return base.Channel.DeleteSpeakerAsync(id);
-        }
-        
-        public System.Collections.ObjectModel.ObservableCollection<Services.SessionServiceReference.SessionDto> GetSessionList() {
-            return base.Channel.GetSessionList();
-        }
-        
-        public System.Threading.Tasks.Task<System.Collections.ObjectModel.ObservableCollection<Services.SessionServiceReference.SessionDto>> GetSessionListAsync() {
-            return base.Channel.GetSessionListAsync();
-        }
-        
-        public Services.SessionServiceReference.SessionDto GetSessionById(int id) {
-            return base.Channel.GetSessionById(id);
-        }
-        
-        public System.Threading.Tasks.Task<Services.SessionServiceReference.SessionDto> GetSessionByIdAsync(int id) {
-            return base.Channel.GetSessionByIdAsync(id);
-        }
-        
-        public Services.SessionServiceReference.SessionDto SearchSessionByTitle(string title) {
-            return base.Channel.SearchSessionByTitle(title);
-        }
-        
-        public System.Threading.Tasks.Task<Services.SessionServiceReference.SessionDto> SearchSessionByTitleAsync(string title) {
-            return base.Channel.SearchSessionByTitleAsync(title);
-        }
-        
-        public Services.SessionServiceReference.SessionDto AddSession(Services.SessionServiceReference.SessionDto session) {
-            return base.Channel.AddSession(session);
-        }
-        
-        public System.Threading.Tasks.Task<Services.SessionServiceReference.SessionDto> AddSessionAsync(Services.SessionServiceReference.SessionDto session) {
-            return base.Channel.AddSessionAsync(session);
-        }
-        
-        public void UpdateSession(Services.SessionServiceReference.SessionDto session) {
-            base.Channel.UpdateSession(session);
-        }
-        
-        public System.Threading.Tasks.Task UpdateSessionAsync(Services.SessionServiceReference.SessionDto session) {
-            return base.Channel.UpdateSessionAsync(session);
-        }
-        
-        public void DeleteSession(int id) {
-            base.Channel.DeleteSession(id);
-        }
-        
-        public System.Threading.Tasks.Task DeleteSessionAsync(int id) {
-            return base.Channel.DeleteSessionAsync(id);
-        }
-        
-        public System.Collections.ObjectModel.ObservableCollection<string> GetSessionTypes() {
-            return base.Channel.GetSessionTypes();
-        }
-        
-        public System.Threading.Tasks.Task<System.Collections.ObjectModel.ObservableCollection<string>> GetSessionTypesAsync() {
-            return base.Channel.GetSessionTypesAsync();
-        }
-        
-        public System.Collections.ObjectModel.ObservableCollection<Services.SessionServiceReference.Track> GetTrackList() {
-            return base.Channel.GetTrackList();
-        }
-        
-        public System.Threading.Tasks.Task<System.Collections.ObjectModel.ObservableCollection<Services.SessionServiceReference.Track>> GetTrackListAsync() {
-            return base.Channel.GetTrackListAsync();
-        }
-        
-        public Services.SessionServiceReference.Track GetTrackById(int id) {
-            return base.Channel.GetTrackById(id);
-        }
-        
-        public System.Threading.Tasks.Task<Services.SessionServiceReference.Track> GetTrackByIdAsync(int id) {
-            return base.Channel.GetTrackByIdAsync(id);
-        }
-        
-        public Services.SessionServiceReference.Track SearchTrackByName(string track) {
-            return base.Channel.SearchTrackByName(track);
-        }
-        
-        public System.Threading.Tasks.Task<Services.SessionServiceReference.Track> SearchTrackByNameAsync(string track) {
-            return base.Channel.SearchTrackByNameAsync(track);
-        }
-        
-        public Services.SessionServiceReference.Track AddTrack(Services.SessionServiceReference.Track track) {
-            return base.Channel.AddTrack(track);
-        }
-        
-        public System.Threading.Tasks.Task<Services.SessionServiceReference.Track> AddTrackAsync(Services.SessionServiceReference.Track track) {
-            return base.Channel.AddTrackAsync(track);
-        }
-        
-        public void UpdateTrack(Services.SessionServiceReference.Track track) {
-            base.Channel.UpdateTrack(track);
-        }
-        
-        public System.Threading.Tasks.Task UpdateTrackAsync(Services.SessionServiceReference.Track track) {
-            return base.Channel.UpdateTrackAsync(track);
-        }
-        
-        public void DeleteTrack(int id) {
-            base.Channel.DeleteTrack(id);
-        }
-        
-        public System.Threading.Tasks.Task DeleteTrackAsync(int id) {
-            return base.Channel.DeleteTrackAsync(id);
-        }
-        
-        public Services.SessionServiceReference.Track SearchTrackTypeByName(string track) {
-            return base.Channel.SearchTrackTypeByName(track);
-        }
-        
-        public System.Threading.Tasks.Task<Services.SessionServiceReference.Track> SearchTrackTypeByNameAsync(string track) {
-            return base.Channel.SearchTrackTypeByNameAsync(track);
-        }
-        
-        public System.Collections.ObjectModel.ObservableCollection<Services.SessionServiceReference.Rating> GetRatingList() {
-            return base.Channel.GetRatingList();
-        }
-        
-        public System.Threading.Tasks.Task<System.Collections.ObjectModel.ObservableCollection<Services.SessionServiceReference.Rating>> GetRatingListAsync() {
-            return base.Channel.GetRatingListAsync();
-        }
-        
-        public Services.SessionServiceReference.Rating GetRatingById(int id) {
-            return base.Channel.GetRatingById(id);
-        }
-        
-        public System.Threading.Tasks.Task<Services.SessionServiceReference.Rating> GetRatingByIdAsync(int id) {
-            return base.Channel.GetRatingByIdAsync(id);
-        }
-        
-        public Services.SessionServiceReference.Rating AddRating(Services.SessionServiceReference.Rating rating) {
-            return base.Channel.AddRating(rating);
-        }
-        
-        public System.Threading.Tasks.Task<Services.SessionServiceReference.Rating> AddRatingAsync(Services.SessionServiceReference.Rating rating) {
-            return base.Channel.AddRatingAsync(rating);
-        }
-        
-        public void UpdateRating(Services.SessionServiceReference.Rating rating) {
-            base.Channel.UpdateRating(rating);
-        }
-        
-        public System.Threading.Tasks.Task UpdateRatingAsync(Services.SessionServiceReference.Rating rating) {
-            return base.Channel.UpdateRatingAsync(rating);
-        }
-        
-        public void DeleteRating(int id) {
-            base.Channel.DeleteRating(id);
-        }
-        
-        public System.Threading.Tasks.Task DeleteRatingAsync(int id) {
-            return base.Channel.DeleteRatingAsync(id);
-        }
-        
-        public System.Collections.ObjectModel.ObservableCollection<Services.SessionServiceReference.Schedule> GetScheduleList() {
-            return base.Channel.GetScheduleList();
-        }
-        
-        public System.Threading.Tasks.Task<System.Collections.ObjectModel.ObservableCollection<Services.SessionServiceReference.Schedule>> GetScheduleListAsync() {
-            return base.Channel.GetScheduleListAsync();
-        }
-        
-        public Services.SessionServiceReference.Schedule GetScheduleById(int id) {
-            return base.Channel.GetScheduleById(id);
-        }
-        
-        public System.Threading.Tasks.Task<Services.SessionServiceReference.Schedule> GetScheduleByIdAsync(int id) {
-            return base.Channel.GetScheduleByIdAsync(id);
-        }
-        
-        public Services.SessionServiceReference.Schedule AddSchedule(int id, Services.SessionServiceReference.Schedule schedule) {
-            return base.Channel.AddSchedule(id, schedule);
-        }
-        
-        public System.Threading.Tasks.Task<Services.SessionServiceReference.Schedule> AddScheduleAsync(int id, Services.SessionServiceReference.Schedule schedule) {
-            return base.Channel.AddScheduleAsync(id, schedule);
-        }
-        
-        public void DeleteSchedule(int id) {
-            base.Channel.DeleteSchedule(id);
-        }
-        
-        public System.Threading.Tasks.Task DeleteScheduleAsync(int id) {
-            return base.Channel.DeleteScheduleAsync(id);
-        }
-        
-        public System.Collections.ObjectModel.ObservableCollection<Services.SessionServiceReference.Slot> AllSlots() {
-            return base.Channel.AllSlots();
-        }
-        
-        public System.Threading.Tasks.Task<System.Collections.ObjectModel.ObservableCollection<Services.SessionServiceReference.Slot>> AllSlotsAsync() {
-            return base.Channel.AllSlotsAsync();
-        }
-        
-        public System.Collections.ObjectModel.ObservableCollection<Services.SessionServiceReference.Slot> AllBreaks() {
-            return base.Channel.AllBreaks();
-        }
-        
-        public System.Threading.Tasks.Task<System.Collections.ObjectModel.ObservableCollection<Services.SessionServiceReference.Slot>> AllBreaksAsync() {
-            return base.Channel.AllBreaksAsync();
-        }
-        
-        public System.Collections.ObjectModel.ObservableCollection<Services.SessionServiceReference.Slot> AllAssignableSlots() {
-            return base.Channel.AllAssignableSlots();
-        }
-        
-        public System.Threading.Tasks.Task<System.Collections.ObjectModel.ObservableCollection<Services.SessionServiceReference.Slot>> AllAssignableSlotsAsync() {
-            return base.Channel.AllAssignableSlotsAsync();
-        }
-        
-        public System.Collections.ObjectModel.ObservableCollection<Services.SessionServiceReference.Slot> GetNotAssignedSlots() {
-            return base.Channel.GetNotAssignedSlots();
-        }
-        
-        public System.Threading.Tasks.Task<System.Collections.ObjectModel.ObservableCollection<Services.SessionServiceReference.Slot>> GetNotAssignedSlotsAsync() {
-            return base.Channel.GetNotAssignedSlotsAsync();
-        }
-        
-        public void UpdateSlot(Services.SessionServiceReference.Slot slot) {
-            base.Channel.UpdateSlot(slot);
-        }
-        
-        public System.Threading.Tasks.Task UpdateSlotAsync(Services.SessionServiceReference.Slot slot) {
-            return base.Channel.UpdateSlotAsync(slot);
-        }
-    }
+    //    public SessionServiceClient() {
+    //    }
+        
+    //    public SessionServiceClient(string endpointConfigurationName) : 
+    //            base(endpointConfigurationName) {
+    //    }
+        
+    //    public SessionServiceClient(string endpointConfigurationName, string remoteAddress) : 
+    //            base(endpointConfigurationName, remoteAddress) {
+    //    }
+        
+    //    public SessionServiceClient(string endpointConfigurationName, System.ServiceModel.EndpointAddress remoteAddress) : 
+    //            base(endpointConfigurationName, remoteAddress) {
+    //    }
+        
+    //    public SessionServiceClient(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) : 
+    //            base(binding, remoteAddress) {
+    //    }
+        
+    //    public System.Collections.ObjectModel.ObservableCollection<Services.SessionServiceReference.Speaker> GetSpeakerList() {
+    //        return base.Channel.GetSpeakerList();
+    //    }
+        
+    //    public System.Threading.Tasks.Task<System.Collections.ObjectModel.ObservableCollection<Services.SessionServiceReference.Speaker>> GetSpeakerListAsync() {
+    //        return base.Channel.GetSpeakerListAsync();
+    //    }
+        
+    //    public Services.SessionServiceReference.Speaker GetSpeakerById(int id) {
+    //        return base.Channel.GetSpeakerById(id);
+    //    }
+        
+    //    public System.Threading.Tasks.Task<Services.SessionServiceReference.Speaker> GetSpeakerByIdAsync(int id) {
+    //        return base.Channel.GetSpeakerByIdAsync(id);
+    //    }
+        
+    //    public Services.SessionServiceReference.Speaker SearchSpeakerByName(string name) {
+    //        return base.Channel.SearchSpeakerByName(name);
+    //    }
+        
+    //    public System.Threading.Tasks.Task<Services.SessionServiceReference.Speaker> SearchSpeakerByNameAsync(string name) {
+    //        return base.Channel.SearchSpeakerByNameAsync(name);
+    //    }
+        
+    //    public Services.SessionServiceReference.Speaker AddSpeaker(Services.SessionServiceReference.Speaker speaker) {
+    //        return base.Channel.AddSpeaker(speaker);
+    //    }
+        
+    //    public System.Threading.Tasks.Task<Services.SessionServiceReference.Speaker> AddSpeakerAsync(Services.SessionServiceReference.Speaker speaker) {
+    //        return base.Channel.AddSpeakerAsync(speaker);
+    //    }
+        
+    //    public void UpdateSpeaker(Services.SessionServiceReference.Speaker speaker) {
+    //        base.Channel.UpdateSpeaker(speaker);
+    //    }
+        
+    //    public System.Threading.Tasks.Task UpdateSpeakerAsync(Services.SessionServiceReference.Speaker speaker) {
+    //        return base.Channel.UpdateSpeakerAsync(speaker);
+    //    }
+        
+    //    public void DeleteSpeaker(int id) {
+    //        base.Channel.DeleteSpeaker(id);
+    //    }
+        
+    //    public System.Threading.Tasks.Task DeleteSpeakerAsync(int id) {
+    //        return base.Channel.DeleteSpeakerAsync(id);
+    //    }
+        
+    //    public System.Collections.ObjectModel.ObservableCollection<Services.SessionServiceReference.SessionDto> GetSessionList() {
+    //        return base.Channel.GetSessionList();
+    //    }
+        
+    //    public System.Threading.Tasks.Task<System.Collections.ObjectModel.ObservableCollection<Services.SessionServiceReference.SessionDto>> GetSessionListAsync() {
+    //        return base.Channel.GetSessionListAsync();
+    //    }
+        
+    //    public Services.SessionServiceReference.SessionDto GetSessionById(int id) {
+    //        return base.Channel.GetSessionById(id);
+    //    }
+        
+    //    public System.Threading.Tasks.Task<Services.SessionServiceReference.SessionDto> GetSessionByIdAsync(int id) {
+    //        return base.Channel.GetSessionByIdAsync(id);
+    //    }
+        
+    //    public Services.SessionServiceReference.SessionDto SearchSessionByTitle(string title) {
+    //        return base.Channel.SearchSessionByTitle(title);
+    //    }
+        
+    //    public System.Threading.Tasks.Task<Services.SessionServiceReference.SessionDto> SearchSessionByTitleAsync(string title) {
+    //        return base.Channel.SearchSessionByTitleAsync(title);
+    //    }
+        
+    //    public Services.SessionServiceReference.SessionDto AddSession(Services.SessionServiceReference.SessionDto session) {
+    //        return base.Channel.AddSession(session);
+    //    }
+        
+    //    public System.Threading.Tasks.Task<Services.SessionServiceReference.SessionDto> AddSessionAsync(Services.SessionServiceReference.SessionDto session) {
+    //        return base.Channel.AddSessionAsync(session);
+    //    }
+        
+    //    public void UpdateSession(Services.SessionServiceReference.SessionDto session) {
+    //        base.Channel.UpdateSession(session);
+    //    }
+        
+    //    public System.Threading.Tasks.Task UpdateSessionAsync(Services.SessionServiceReference.SessionDto session) {
+    //        return base.Channel.UpdateSessionAsync(session);
+    //    }
+        
+    //    public void DeleteSession(int id) {
+    //        base.Channel.DeleteSession(id);
+    //    }
+        
+    //    public System.Threading.Tasks.Task DeleteSessionAsync(int id) {
+    //        return base.Channel.DeleteSessionAsync(id);
+    //    }
+        
+    //    public System.Collections.ObjectModel.ObservableCollection<string> GetSessionTypes() {
+    //        return base.Channel.GetSessionTypes();
+    //    }
+        
+    //    public System.Threading.Tasks.Task<System.Collections.ObjectModel.ObservableCollection<string>> GetSessionTypesAsync() {
+    //        return base.Channel.GetSessionTypesAsync();
+    //    }
+        
+    //    public System.Collections.ObjectModel.ObservableCollection<Services.SessionServiceReference.Track> GetTrackList() {
+    //        return base.Channel.GetTrackList();
+    //    }
+        
+    //    public System.Threading.Tasks.Task<System.Collections.ObjectModel.ObservableCollection<Services.SessionServiceReference.Track>> GetTrackListAsync() {
+    //        return base.Channel.GetTrackListAsync();
+    //    }
+        
+    //    public Services.SessionServiceReference.Track GetTrackById(int id) {
+    //        return base.Channel.GetTrackById(id);
+    //    }
+        
+    //    public System.Threading.Tasks.Task<Services.SessionServiceReference.Track> GetTrackByIdAsync(int id) {
+    //        return base.Channel.GetTrackByIdAsync(id);
+    //    }
+        
+    //    public Services.SessionServiceReference.Track SearchTrackByName(string track) {
+    //        return base.Channel.SearchTrackByName(track);
+    //    }
+        
+    //    public System.Threading.Tasks.Task<Services.SessionServiceReference.Track> SearchTrackByNameAsync(string track) {
+    //        return base.Channel.SearchTrackByNameAsync(track);
+    //    }
+        
+    //    public Services.SessionServiceReference.Track AddTrack(Services.SessionServiceReference.Track track) {
+    //        return base.Channel.AddTrack(track);
+    //    }
+        
+    //    public System.Threading.Tasks.Task<Services.SessionServiceReference.Track> AddTrackAsync(Services.SessionServiceReference.Track track) {
+    //        return base.Channel.AddTrackAsync(track);
+    //    }
+        
+    //    public void UpdateTrack(Services.SessionServiceReference.Track track) {
+    //        base.Channel.UpdateTrack(track);
+    //    }
+        
+    //    public System.Threading.Tasks.Task UpdateTrackAsync(Services.SessionServiceReference.Track track) {
+    //        return base.Channel.UpdateTrackAsync(track);
+    //    }
+        
+    //    public void DeleteTrack(int id) {
+    //        base.Channel.DeleteTrack(id);
+    //    }
+        
+    //    public System.Threading.Tasks.Task DeleteTrackAsync(int id) {
+    //        return base.Channel.DeleteTrackAsync(id);
+    //    }
+        
+    //    public Services.SessionServiceReference.Track SearchTrackTypeByName(string track) {
+    //        return base.Channel.SearchTrackTypeByName(track);
+    //    }
+        
+    //    public System.Threading.Tasks.Task<Services.SessionServiceReference.Track> SearchTrackTypeByNameAsync(string track) {
+    //        return base.Channel.SearchTrackTypeByNameAsync(track);
+    //    }
+        
+    //    public System.Collections.ObjectModel.ObservableCollection<Services.SessionServiceReference.Rating> GetRatingList() {
+    //        return base.Channel.GetRatingList();
+    //    }
+        
+    //    public System.Threading.Tasks.Task<System.Collections.ObjectModel.ObservableCollection<Services.SessionServiceReference.Rating>> GetRatingListAsync() {
+    //        return base.Channel.GetRatingListAsync();
+    //    }
+        
+    //    public Services.SessionServiceReference.Rating GetRatingById(int id) {
+    //        return base.Channel.GetRatingById(id);
+    //    }
+        
+    //    public System.Threading.Tasks.Task<Services.SessionServiceReference.Rating> GetRatingByIdAsync(int id) {
+    //        return base.Channel.GetRatingByIdAsync(id);
+    //    }
+        
+    //    public Services.SessionServiceReference.Rating AddRating(Services.SessionServiceReference.Rating rating) {
+    //        return base.Channel.AddRating(rating);
+    //    }
+        
+    //    public System.Threading.Tasks.Task<Services.SessionServiceReference.Rating> AddRatingAsync(Services.SessionServiceReference.Rating rating) {
+    //        return base.Channel.AddRatingAsync(rating);
+    //    }
+        
+    //    public void UpdateRating(Services.SessionServiceReference.Rating rating) {
+    //        base.Channel.UpdateRating(rating);
+    //    }
+        
+    //    public System.Threading.Tasks.Task UpdateRatingAsync(Services.SessionServiceReference.Rating rating) {
+    //        return base.Channel.UpdateRatingAsync(rating);
+    //    }
+        
+    //    public void DeleteRating(int id) {
+    //        base.Channel.DeleteRating(id);
+    //    }
+        
+    //    public System.Threading.Tasks.Task DeleteRatingAsync(int id) {
+    //        return base.Channel.DeleteRatingAsync(id);
+    //    }
+        
+    //    public System.Collections.ObjectModel.ObservableCollection<Services.SessionServiceReference.Schedule> GetScheduleList() {
+    //        return base.Channel.GetScheduleList();
+    //    }
+        
+    //    public System.Threading.Tasks.Task<System.Collections.ObjectModel.ObservableCollection<Services.SessionServiceReference.Schedule>> GetScheduleListAsync() {
+    //        return base.Channel.GetScheduleListAsync();
+    //    }
+        
+    //    public Services.SessionServiceReference.Schedule GetScheduleById(int id) {
+    //        return base.Channel.GetScheduleById(id);
+    //    }
+        
+    //    public System.Threading.Tasks.Task<Services.SessionServiceReference.Schedule> GetScheduleByIdAsync(int id) {
+    //        return base.Channel.GetScheduleByIdAsync(id);
+    //    }
+        
+    //    public Services.SessionServiceReference.Schedule AddSchedule(int id, Services.SessionServiceReference.Schedule schedule) {
+    //        return base.Channel.AddSchedule(id, schedule);
+    //    }
+        
+    //    public System.Threading.Tasks.Task<Services.SessionServiceReference.Schedule> AddScheduleAsync(int id, Services.SessionServiceReference.Schedule schedule) {
+    //        return base.Channel.AddScheduleAsync(id, schedule);
+    //    }
+        
+    //    public void DeleteSchedule(int id) {
+    //        base.Channel.DeleteSchedule(id);
+    //    }
+        
+    //    public System.Threading.Tasks.Task DeleteScheduleAsync(int id) {
+    //        return base.Channel.DeleteScheduleAsync(id);
+    //    }
+        
+    //    public System.Collections.ObjectModel.ObservableCollection<Services.SessionServiceReference.Slot> AllSlots() {
+    //        return base.Channel.AllSlots();
+    //    }
+        
+    //    public System.Threading.Tasks.Task<System.Collections.ObjectModel.ObservableCollection<Services.SessionServiceReference.Slot>> AllSlotsAsync() {
+    //        return base.Channel.AllSlotsAsync();
+    //    }
+        
+    //    public System.Collections.ObjectModel.ObservableCollection<Services.SessionServiceReference.Slot> AllBreaks() {
+    //        return base.Channel.AllBreaks();
+    //    }
+        
+    //    public System.Threading.Tasks.Task<System.Collections.ObjectModel.ObservableCollection<Services.SessionServiceReference.Slot>> AllBreaksAsync() {
+    //        return base.Channel.AllBreaksAsync();
+    //    }
+        
+    //    public System.Collections.ObjectModel.ObservableCollection<Services.SessionServiceReference.Slot> AllAssignableSlots() {
+    //        return base.Channel.AllAssignableSlots();
+    //    }
+        
+    //    public System.Threading.Tasks.Task<System.Collections.ObjectModel.ObservableCollection<Services.SessionServiceReference.Slot>> AllAssignableSlotsAsync() {
+    //        return base.Channel.AllAssignableSlotsAsync();
+    //    }
+        
+    //    public System.Collections.ObjectModel.ObservableCollection<Services.SessionServiceReference.Slot> GetNotAssignedSlots() {
+    //        return base.Channel.GetNotAssignedSlots();
+    //    }
+        
+    //    public System.Threading.Tasks.Task<System.Collections.ObjectModel.ObservableCollection<Services.SessionServiceReference.Slot>> GetNotAssignedSlotsAsync() {
+    //        return base.Channel.GetNotAssignedSlotsAsync();
+    //    }
+        
+    //    public void UpdateSlot(Services.SessionServiceReference.Slot slot) {
+    //        base.Channel.UpdateSlot(slot);
+    //    }
+        
+    //    public System.Threading.Tasks.Task UpdateSlotAsync(Services.SessionServiceReference.Slot slot) {
+    //        return base.Channel.UpdateSlotAsync(slot);
+    //    }
+    //}
 }
