@@ -11,8 +11,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Initializer", "Initializer"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DatabaseInitializer", "DatabaseInitializer\DatabaseInitializer.csproj", "{2016B6B0-153C-425F-B651-6178305E1EB6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StaticResources", "StaticResources\StaticResources.csproj", "{403F7F72-B0D6-4006-AC78-8AB90F6641D0}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceLayer", "ServiceLayer\ServiceLayer.csproj", "{ADD2411B-C7A4-49B0-B04F-456A32CA7A2E}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Client", "Client", "{CB63BC47-5FF3-4748-B390-735B97507BD7}"
@@ -66,10 +64,6 @@ Global
 		{2016B6B0-153C-425F-B651-6178305E1EB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2016B6B0-153C-425F-B651-6178305E1EB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2016B6B0-153C-425F-B651-6178305E1EB6}.Release|Any CPU.Build.0 = Release|Any CPU
-		{403F7F72-B0D6-4006-AC78-8AB90F6641D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{403F7F72-B0D6-4006-AC78-8AB90F6641D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{403F7F72-B0D6-4006-AC78-8AB90F6641D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{403F7F72-B0D6-4006-AC78-8AB90F6641D0}.Release|Any CPU.Build.0 = Release|Any CPU
 		{ADD2411B-C7A4-49B0-B04F-456A32CA7A2E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{ADD2411B-C7A4-49B0-B04F-456A32CA7A2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ADD2411B-C7A4-49B0-B04F-456A32CA7A2E}.Release|Any CPU.ActiveCfg = Release|Any CPU

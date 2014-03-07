@@ -81,12 +81,6 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\StaticResources\StaticResources.csproj">
-      <Project>{403f7f72-b0d6-4006-ac78-8ab90f6641d0}</Project>
-      <Name>StaticResources</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <Folder Include="Migrations\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

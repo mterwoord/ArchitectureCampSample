@@ -2,7 +2,6 @@
 using System.Web.Http;
 using EndToEnd.BusinessLayer;
 using EndToEnd.DataLayer.Models;
-using Newtonsoft.Json;
 
 namespace ServiceLayer.ApiControllers
 {
@@ -12,9 +11,7 @@ namespace ServiceLayer.ApiControllers
         [ActionName("list")]
         public IList<Slot> AllSlots()
         {
-            var data = SessionRepository.Instance.AvailableSlots();
-
-            return data;
+            return SessionRepository.Instance.AvailableSlots();
         }
 
         [HttpGet]
