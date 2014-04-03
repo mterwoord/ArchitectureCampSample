@@ -3,7 +3,6 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace EndToEnd.DataLayer.Models
 {
-
     [Table("Sessions")]
     public class Workshop : SessionBase
     {
@@ -14,6 +13,5 @@ namespace EndToEnd.DataLayer.Models
                 return TimeSpan.FromHours(6);
             }
         }
-
     }
 }

@@ -7,7 +7,6 @@ namespace EndToEnd.DataLayer.Validation
     [AttributeUsage(AttributeTargets.Property, AllowMultiple = false)]
     public class RestrictCountAttribute : ValidationAttribute
     {
-
         public int MaxCount { get; set; }
 
         public RestrictCountAttribute(int maxCount)

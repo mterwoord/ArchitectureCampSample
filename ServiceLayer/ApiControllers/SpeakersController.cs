@@ -1,7 +1,7 @@
-﻿using System.Collections.Generic;
-using System.Web.Http;
-using EndToEnd.BusinessLayer;
+﻿using EndToEnd.BusinessLayer;
 using EndToEnd.DataLayer.Models;
+using System.Collections.Generic;
+using System.Web.Http;
 
 namespace ServiceLayer.ApiControllers
 {

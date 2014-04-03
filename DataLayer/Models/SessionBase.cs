@@ -4,13 +4,10 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
-using System.Runtime.Serialization;
 using System.Xml;
-using System.Xml.Serialization;
 
 namespace EndToEnd.DataLayer.Models
 {
-
     [Table("Sessions")]
     public abstract class SessionBase : EntityBase
     {

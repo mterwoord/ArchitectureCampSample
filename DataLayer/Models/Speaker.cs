@@ -28,6 +28,5 @@ namespace EndToEnd.DataLayer.Models
         public byte[] Photo { get; set; }
 
         public IList<SessionBase> Sessions { get; set; }
-
     }
 }

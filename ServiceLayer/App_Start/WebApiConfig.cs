@@ -1,6 +1,6 @@
-﻿using System.Net.Http.Formatting;
+﻿using Newtonsoft.Json;
+using System.Net.Http.Formatting;
 using System.Web.Http;
-using Newtonsoft.Json;
 
 namespace ServiceLayer
 {

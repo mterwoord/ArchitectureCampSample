@@ -59,8 +59,6 @@
     <Compile Include="Context\EndToEndContext.cs" />
     <Compile Include="Models\Slot.cs" />
     <Compile Include="Models\EntityBase.cs" />
-    <Compile Include="Models\HierarchyBase.cs" />
-    <Compile Include="Models\IHierarchyBase.cs" />
     <Compile Include="Models\Rating.cs" />
     <Compile Include="Models\Schedule.cs" />
     <Compile Include="Models\Workshop.cs" />
