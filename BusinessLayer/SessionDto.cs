@@ -1,9 +1,9 @@
-﻿using EndToEnd.DataLayer.Models;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using EndToEnd.DataLayer.Model;
 
-namespace BusinessLayer.Models
+namespace EndToEnd.BusinessLayer
 {
     public class SessionDto
     {
@@ -46,9 +46,11 @@ namespace BusinessLayer.Models
         public string Title { get; set; }
 
         public int Speaker1Id { get; set; }
+
         public Speaker Speaker1 { get; set; }
 
         public int Speaker2Id { get; set; }
+        
         public Speaker Speaker2 { get; set; }
 
         public string Abstract { get; set; }

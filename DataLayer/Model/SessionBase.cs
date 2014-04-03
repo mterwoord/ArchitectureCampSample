@@ -1,12 +1,13 @@
-﻿using EndToEnd.DataLayer.Validation;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Xml;
+using EndToEnd.DataLayer.Models;
+using EndToEnd.DataLayer.Validation;
 
-namespace EndToEnd.DataLayer.Models
+namespace EndToEnd.DataLayer.Model
 {
     [Table("Sessions")]
     public abstract class SessionBase : EntityBase

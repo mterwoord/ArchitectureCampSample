@@ -1,5 +1,5 @@
-﻿using BusinessLayer.Models;
-using EndToEnd.DataLayer.Context;
+﻿using EndToEnd.DataLayer.Context;
+using EndToEnd.DataLayer.Model;
 using EndToEnd.DataLayer.Models;
 using System.Collections.Generic;
 using System.Data.Entity;
@@ -13,6 +13,7 @@ namespace EndToEnd.BusinessLayer
 
         public ConferenceManager()
         {
+            // TODO: DI
             context = new EndToEndContext();
         }
 
@@ -341,13 +342,13 @@ namespace EndToEnd.BusinessLayer
               .ToList()                         // erforderlich, weil Except auf komplexen Typen nicht un Store-Ausdruck gewandelt werden kann
               .Except(GetAssignedSlots(),       // Mengenoperationen im Speicher, wenn geringe Speichermenge
                       new SlotComparer()); 
+
             // Vergleich nach eigenen Kriterien
             return notAssigned.ToList();
         }
 
         class SlotComparer : IEqualityComparer<Slot>
         {
-
             public bool Equals(Slot x, Slot y)
             {
                 return x.Start == y.Start;

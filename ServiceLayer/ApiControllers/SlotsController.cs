@@ -1,4 +1,5 @@
 ﻿using EndToEnd.BusinessLayer;
+using EndToEnd.DataLayer.Model;
 using EndToEnd.DataLayer.Models;
 using System.Collections.Generic;
 using System.Web.Http;

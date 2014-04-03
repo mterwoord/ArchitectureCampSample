@@ -1,7 +1,8 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using EndToEnd.DataLayer.Models;
 
-namespace EndToEnd.DataLayer.Models
+namespace EndToEnd.DataLayer.Model
 {
     [Table("Ratings")]
     public class Rating : EntityBase

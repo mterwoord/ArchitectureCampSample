@@ -1,16 +1,16 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace EndToEnd.DataLayer.Models
+namespace EndToEnd.DataLayer.Model
 {
     [Table("Sessions")]
-    public class Session : SessionBase
+    public class Workshop : SessionBase
     {
         public override TimeSpan Duration
         {
             get
             {
-                return TimeSpan.FromMinutes(75);
+                return TimeSpan.FromHours(6);
             }
         }
     }
