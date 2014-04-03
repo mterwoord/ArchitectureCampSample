@@ -13,9 +13,12 @@ namespace EndToEnd.DataLayer.Context
         public EndToEndContext()
             : base("EndToEndContext")
         {
-            ((IObjectContextAdapter)this).ObjectContext.CommandTimeout = 180;
             ((IObjectContextAdapter)this).ObjectContext.SavingChanges += ObjectContext_SavingChanges;
-            base.Configuration.ProxyCreationEnabled = false;
+         
+            Configuration.ProxyCreationEnabled = false;
+            Configuration.AutoDetectChangesEnabled = false;
+            Configuration.LazyLoadingEnabled = false;
+            Configuration.ValidateOnSaveEnabled = false;
         }
 
         public DbSet<Speaker> Speakers { get; set; }
@@ -53,15 +56,9 @@ namespace EndToEnd.DataLayer.Context
             }
         }
 
-        public EndToEndContext(string cnt)
-            : base(cnt)
-        {
-        }
-
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
-            //modelBuilder.Conventions.Remove<ManyToManyCascadeDeleteConvention>();
 
             modelBuilder.Entity<Speaker>()
                .HasMany(s => s.Sessions)
