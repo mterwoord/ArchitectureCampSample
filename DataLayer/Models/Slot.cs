@@ -2,16 +2,16 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace EndToEnd.DataLayer.Models {
+namespace EndToEnd.DataLayer.Models
+{
+    [Table("Slots")]
+    public class Slot : EntityBase
+    {
+        [Required]
+        public DateTime Start { get; set; }
 
-  [Table("Slots")]
-  public class Slot : EntityBase {
+        public bool IsBreak { get; set; }
 
-    [Required]
-    public DateTime Start { get; set; }
-
-    public bool IsBreak { get; set; }
-
-    public int SessionId { get; set; }
-  }
+        public int SessionId { get; set; }
+    }
 }

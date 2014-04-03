@@ -1,5 +1,6 @@
 ﻿using System.Net.Http.Formatting;
 using System.Web.Http;
+using Newtonsoft.Json;
 
 namespace ServiceLayer
 {
@@ -7,8 +8,12 @@ namespace ServiceLayer
     {
         public static void Register(HttpConfiguration config)
         {
+            var formatter = new JsonMediaTypeFormatter();
+
+            // TODO: nope... use clean DTOs
+            formatter.SerializerSettings.PreserveReferencesHandling = PreserveReferencesHandling.All;
             config.Formatters.Clear();
-            config.Formatters.Add(new JsonMediaTypeFormatter());
+            config.Formatters.Add(formatter);
 
             config.MapHttpAttributeRoutes();
 

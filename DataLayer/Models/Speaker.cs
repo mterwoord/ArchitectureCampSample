@@ -1,50 +1,33 @@
 ﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Runtime.Serialization;
-using System.Xml.Serialization;
 
-namespace EndToEnd.DataLayer.Models {
+namespace EndToEnd.DataLayer.Models
+{
+    [Table("Speakers")]
+    public class Speaker : EntityBase
+    {
+        [Required]
+        [StringLength(100)]
+        public string Name { get; set; }
 
-  [DataContract]
-  [Table("Speakers")]
-  public class Speaker : EntityBase {
+        [StringLength(100)]
+        public string Company { get; set; }
 
-    [XmlElement("name")]
-    [DataMember]
-    [Required]
-    [StringLength(100)]
-    public string Name { get; set; }
+        [EmailAddress]
+        [StringLength(100)]
+        public string EMail { get; set; }
 
-    [XmlElement("company")]
-    [DataMember]
-    [StringLength(100)]
-    public string Company { get; set; }
+        [RegularExpression(@"\d{2,5}/\d+")]
+        [StringLength(100)]
+        public string Phone { get; set; }
 
-    [XmlElement("email")]
-    [DataMember]
-    [EmailAddress]
-    [StringLength(100)]
-    public string EMail { get; set; }
+        [StringLength(2000)]
+        public string Bio { get; set; }
 
-    [XmlElement("phone")]
-    [DataMember]
-    [RegularExpression(@"\d{2,5}/\d+")]
-    [StringLength(100)]
-    public string Phone { get; set; }
+        public byte[] Photo { get; set; }
 
-    [XmlElement("bio")]
-    [DataMember]
-    [StringLength(2000)]
-    public string Bio { get; set; }
+        public IList<SessionBase> Sessions { get; set; }
 
-    [XmlElement("photo")]
-    [DataMember]
-    public byte[] Photo { get; set; }
-
-    [XmlIgnore]
-    public IList<SessionBase> Sessions { get; set; }
-
-
-  }
+    }
 }

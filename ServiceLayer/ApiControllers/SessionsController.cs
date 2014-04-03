@@ -7,53 +7,60 @@ namespace ServiceLayer.ApiControllers
 {
     public class SessionsController : ApiController
     {
+        private ConferenceManager conferenceManager;
+
+        public SessionsController()
+        {
+            conferenceManager = new ConferenceManager();
+        }
+
         [HttpGet]
         [ActionName("list")]
         public IList<SessionDto> GetSessionList()
         {
-            return SessionRepository.Instance.GetSessionList();
+            return conferenceManager.GetSessionList();
         }
 
         [HttpGet]
         [ActionName("list")]
         public SessionDto GetSessionById(int id)
         {
-            return SessionRepository.Instance.GetSessionById(id);
+            return conferenceManager.GetSessionById(id);
         }
 
         [HttpGet]
         [ActionName("search")]
         public SessionDto SearchSessionByTitle(string title)
         {
-            return SessionRepository.Instance.SearchSessionByTitle(title);
+            return conferenceManager.SearchSessionByTitle(title);
         }
 
         [HttpGet]
         [ActionName("types")]
         public IEnumerable<string> GetSessionTypes()
         {
-            return SessionRepository.Instance.GetSessionTypes();
+            return conferenceManager.GetSessionTypes();
         }
 
         [HttpPost]
         [ActionName("list")]
         public SessionDto AddSession(SessionDto session)
         {
-            return SessionRepository.Instance.AddSession(session);
+            return conferenceManager.AddSession(session);
         }
 
         [HttpPut]
         [ActionName("list")]
         public void UpdateSession(SessionDto session)
         {
-            SessionRepository.Instance.UpdateSession(session);
+            conferenceManager.UpdateSession(session);
         }
 
         [HttpDelete]
         [ActionName("list")]
         public void DeleteSession(int id)
         {
-            SessionRepository.Instance.DeleteSession(id);
+            conferenceManager.DeleteSession(id);
         }
     }
 }

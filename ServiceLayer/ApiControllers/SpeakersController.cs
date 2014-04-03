@@ -7,46 +7,53 @@ namespace ServiceLayer.ApiControllers
 {
     public class SpeakersController : ApiController
     {
+        private ConferenceManager conferenceManager;
+
+        public SpeakersController()
+        {
+            conferenceManager = new ConferenceManager();
+        }
+
         [HttpGet]
         [ActionName("list")]
         public IList<Speaker> GetSpeakerList()
         {
-            return SessionRepository.Instance.GetSpeakerList();
+            return conferenceManager.GetSpeakerList();
         }
 
         [HttpGet]
         [ActionName("list")]
         public Speaker GetSpeakerById(int id)
         {
-            return SessionRepository.Instance.GetSpeakerById(id);
+            return conferenceManager.GetSpeakerById(id);
         }
 
         [HttpGet]
         [ActionName("search")]
         public Speaker SearchSpeakerByName(string name)
         {
-            return SessionRepository.Instance.SearchSpeakerByName(name);
+            return conferenceManager.SearchSpeakerByName(name);
         }
 
         [HttpPost]
         [ActionName("list")]
         public Speaker AddSpeaker(Speaker speaker)
         {
-            return SessionRepository.Instance.AddSpeaker(speaker);
+            return conferenceManager.AddSpeaker(speaker);
         }
 
         [HttpPut]
         [ActionName("list")]
         public void UpdateSpeaker(Speaker speaker)
         {
-            SessionRepository.Instance.UpdateSpeaker(speaker);
+            conferenceManager.UpdateSpeaker(speaker);
         }
 
         [HttpDelete]
         [ActionName("list")]
         public void DeleteSpeaker(int id)
         {
-            SessionRepository.Instance.DeleteSpeaker(id);
+            conferenceManager.DeleteSpeaker(id);
         }
     }
 }

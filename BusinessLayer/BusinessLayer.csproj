@@ -52,12 +52,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="IRepository.cs" />
     <Compile Include="Models\SessionDto.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Repository.cs" />
-    <Compile Include="SessionRepository.cs" />
-    <Compile Include="Singleton.cs" />
+    <Compile Include="ConferenceManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

@@ -7,39 +7,46 @@ namespace ServiceLayer.ApiControllers
 {
     public class SlotsController : ApiController
     {
+        private ConferenceManager conferenceManager;
+
+        public SlotsController()
+        {
+            conferenceManager = new ConferenceManager();
+        }
+
         [HttpGet]
         [ActionName("list")]
         public IList<Slot> AllSlots()
         {
-            return SessionRepository.Instance.AvailableSlots();
+            return conferenceManager.AvailableSlots();
         }
 
         [HttpGet]
         [ActionName("breaks")]
         public IList<Slot> AllBreaks()
         {
-            return SessionRepository.Instance.AvailableSlots(true);
+            return conferenceManager.AvailableSlots(true);
         }
 
         [HttpGet]
         [ActionName("assignable")]
         public IList<Slot> AllAssignableSlots()
         {
-            return SessionRepository.Instance.AvailableSlots(false);
+            return conferenceManager.AvailableSlots(false);
         }
 
         [HttpGet]
         [ActionName("notassigned")]
         public IList<Slot> GetNotAssignedSlots()
         {
-            return SessionRepository.Instance.GetNotAssignedSlots();
+            return conferenceManager.GetNotAssignedSlots();
         }
 
         [HttpPut]
         [ActionName("list")]
         public void UpdateSlot(Slot slot)
         {
-            SessionRepository.Instance.UpdateSlot(slot);
+            conferenceManager.UpdateSlot(slot);
         }
     }
 }

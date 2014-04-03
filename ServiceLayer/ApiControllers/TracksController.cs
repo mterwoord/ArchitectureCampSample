@@ -7,53 +7,60 @@ namespace ServiceLayer.ApiControllers
 {
     public class TracksController : ApiController
     {
+        private ConferenceManager conferenceManager;
+
+        public TracksController()
+        {
+            conferenceManager = new ConferenceManager();
+        }
+
         [HttpGet]
         [ActionName("list")]
         public IList<Track> GetTrackList()
         {
-            return SessionRepository.Instance.GetTrackList();
+            return conferenceManager.GetTrackList();
         }
 
         [HttpGet]
         [ActionName("list")]
         public Track GetTrackById(int id)
         {
-            return SessionRepository.Instance.GetTrackById(id);
+            return conferenceManager.GetTrackById(id);
         }
 
         [HttpGet]
         [ActionName("search")]
         public Track SearchTrackByName(string track)
         {
-            return SessionRepository.Instance.SearchTrackByName(track);
+            return conferenceManager.SearchTrackByName(track);
         }
 
         [HttpGet]
         [ActionName("type")]
         public Track SearchTrackTypeByName(string track)
         {
-            return SessionRepository.Instance.SearchTrackTypeByName(track);
+            return conferenceManager.SearchTrackTypeByName(track);
         }
 
         [HttpPost]
         [ActionName("list")]
         public Track AddTrack(Track track)
         {
-            return SessionRepository.Instance.AddTrack(track);
+            return conferenceManager.AddTrack(track);
         }
 
         [HttpPut]
         [ActionName("list")]
         public void UpdateTrack(Track track)
         {
-            SessionRepository.Instance.UpdateTrack(track);
+            conferenceManager.UpdateTrack(track);
         }
 
         [HttpDelete]
         [ActionName("list")]
         public void DeleteTrack(int id)
         {
-            SessionRepository.Instance.DeleteTrack(id);
+            conferenceManager.DeleteTrack(id);
         }
     }
 }

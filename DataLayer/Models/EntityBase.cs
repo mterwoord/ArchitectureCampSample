@@ -7,13 +7,11 @@ using System.Reflection;
 
 namespace EndToEnd.DataLayer.Models
 {
-
     /// <summary>
     /// Marker attribute to suppress auto copy
     /// </summary>
     public class SuppressPropertyCopy : Attribute
     {
-
     }
 
     public abstract class EntityBase
@@ -75,6 +73,5 @@ namespace EndToEnd.DataLayer.Models
             }
         }
     }
-
 }
 

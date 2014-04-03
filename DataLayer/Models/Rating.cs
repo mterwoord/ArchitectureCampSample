@@ -1,43 +1,27 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Runtime.Serialization;
-using System.Xml.Serialization;
 
-namespace EndToEnd.DataLayer.Models {
-  
-  [DataContract]
-  [XmlRoot("ratings")]
-  [Table("Ratings")]
-  public class Rating : EntityBase {
+namespace EndToEnd.DataLayer.Models
+{
+    [Table("Ratings")]
+    public class Rating : EntityBase
+    {
+        [NotMapped] // use navigation property
+        public int SpeakerId { get; set; }
 
-    [XmlIgnore] // serialize through session object
-    [NotMapped] // use navigation property
-    [DataMember]
-    public int SpeakerId { get; set; }
+        public int SessionId { get; set; }
 
-    [XmlIgnore] // serialize through session object
-    //[NotMapped] // use navigation property
-    [DataMember]
-    public int SessionId { get; set; }
+        [Required]
+        public Speaker Speaker { get; set; }
 
-    [XmlIgnore]
-    [Required]
-    public Speaker Speaker { get; set; }
+        [Required]
+        public SessionBase Session { get; set; }
 
-    [XmlIgnore]
-    [Required]
-    public SessionBase Session { get; set; }
+        [Range(1, 6)]
+        public int Rate { get; set; }
 
-    [XmlElement("rate")]
-    [Range(1,6)]
-    [DataMember]
-    public int Rate { get; set; }
-    
-    [XmlElement("comment")]
-    [StringLength(500)]
-    [MinLength(10)]
-    [DataMember]
-    public string Comment { get; set; }
-
-  }
+        [StringLength(500)]
+        [MinLength(10)]
+        public string Comment { get; set; }
+    }
 }
