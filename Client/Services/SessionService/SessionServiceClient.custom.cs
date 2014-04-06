@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.ObjectModel;
-using System.Net;
+using System.Configuration;
 using System.Net.Http;
 using System.Threading.Tasks;
 
@@ -14,7 +14,7 @@ namespace Services.SessionServiceReference
         {
             //httpClient = new HttpClient(new HttpClientHandler { UseProxy = true, Proxy = new WebProxy("http://127.0.0.1:8888", false) });
             httpClient = new HttpClient();
-            httpClient.BaseAddress = new Uri("http://windows8vm/conferences/api/");
+            httpClient.BaseAddress = new Uri(ConfigurationManager.AppSettings["EndToEnd:ServicesBaseUrl"]);
         }
 
         public ObservableCollection<Speaker> GetSpeakerList()
