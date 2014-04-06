@@ -37,6 +37,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SessionModule", "Client\Mod
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpeakerModule", "Client\Modules\SpeakerModule\SpeakerModule.csproj", "{F3119FA9-0FA8-4783-92C1-27B6C8480C14}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hosting", "Hosting\Hosting.csproj", "{74A2D7E7-2581-470C-8F82-16F4B02E09DD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SelfHost", "SelfHost\SelfHost.csproj", "{49638305-1712-4855-AAEF-FA09C1667759}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -91,6 +95,14 @@ Global
 		{F3119FA9-0FA8-4783-92C1-27B6C8480C14}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F3119FA9-0FA8-4783-92C1-27B6C8480C14}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F3119FA9-0FA8-4783-92C1-27B6C8480C14}.Release|Any CPU.Build.0 = Release|Any CPU
+		{74A2D7E7-2581-470C-8F82-16F4B02E09DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74A2D7E7-2581-470C-8F82-16F4B02E09DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74A2D7E7-2581-470C-8F82-16F4B02E09DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74A2D7E7-2581-470C-8F82-16F4B02E09DD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{49638305-1712-4855-AAEF-FA09C1667759}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49638305-1712-4855-AAEF-FA09C1667759}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49638305-1712-4855-AAEF-FA09C1667759}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49638305-1712-4855-AAEF-FA09C1667759}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

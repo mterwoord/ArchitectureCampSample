@@ -110,9 +110,7 @@
     <Compile Include="ApiControllers\TracksController.cs" />
     <Compile Include="ApiControllers\SpeakersController.cs" />
     <Compile Include="ApiControllers\SessionsController.cs" />
-    <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
@@ -133,6 +131,10 @@
     <ProjectReference Include="..\DataLayer\DataLayer.csproj">
       <Project>{9b931cf2-515a-4f97-a390-43668cbb7489}</Project>
       <Name>DataLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Hosting\Hosting.csproj">
+      <Project>{74a2d7e7-2581-470c-8f82-16f4b02e09dd}</Project>
+      <Name>Hosting</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

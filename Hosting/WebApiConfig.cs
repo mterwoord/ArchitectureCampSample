@@ -1,7 +1,7 @@
 ﻿using System.Net.Http.Formatting;
 using System.Web.Http;
 
-namespace WebHost
+namespace Hosting
 {
     public static class WebApiConfig
     {

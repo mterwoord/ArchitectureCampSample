@@ -1,8 +1,7 @@
 ﻿using System.Web.Http;
 using Owin;
-using ServiceLayer;
 
-namespace WebHost
+namespace Hosting
 {
     public class Startup
     {
