@@ -1,8 +1,7 @@
-﻿using Newtonsoft.Json;
-using System.Net.Http.Formatting;
+﻿using System.Net.Http.Formatting;
 using System.Web.Http;
 
-namespace ServiceLayer
+namespace WebHost
 {
     public static class WebApiConfig
     {
