@@ -12,8 +12,8 @@ namespace Services.SessionServiceReference
 
         public SessionServiceClient()
         {
-            httpClient = new HttpClient(new HttpClientHandler { UseProxy = true, Proxy = new WebProxy("http://127.0.0.1:8888", false) });
-            //httpClient = new HttpClient();
+            //httpClient = new HttpClient(new HttpClientHandler { UseProxy = true, Proxy = new WebProxy("http://127.0.0.1:8888", false) });
+            httpClient = new HttpClient();
             httpClient.BaseAddress = new Uri("http://windows8vm/conferences/api/");
         }
 
