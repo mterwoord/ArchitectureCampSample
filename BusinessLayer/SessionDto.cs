@@ -21,9 +21,14 @@ namespace EndToEnd.BusinessLayer
             Duration = s.Duration;
             SessionType = s.GetType().Name;
             Speaker1Id = s.Speaker1Id;
-            Speaker1 = s.Speaker1;
+            Speaker1 = new SpeakerDto(s.Speaker1);
             Speaker2Id = s.Speaker2Id;
-            Speaker2 = s.Speaker2;
+            
+            if (s.Speaker2 != null)
+            {
+                Speaker2 = new SpeakerDto(s.Speaker2);
+            }
+            
             Title = s.Title;
 
             if (s.Ratings == null)
@@ -47,11 +52,11 @@ namespace EndToEnd.BusinessLayer
 
         public int Speaker1Id { get; set; }
 
-        public Speaker Speaker1 { get; set; }
+        public SpeakerDto Speaker1 { get; set; }
 
         public int Speaker2Id { get; set; }
-        
-        public Speaker Speaker2 { get; set; }
+
+        public SpeakerDto Speaker2 { get; set; }
 
         public string Abstract { get; set; }
 

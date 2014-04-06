@@ -11,7 +11,7 @@ namespace ServiceLayer
             var formatter = new JsonMediaTypeFormatter();
 
             // TODO: nope... use clean DTOs
-            formatter.SerializerSettings.PreserveReferencesHandling = PreserveReferencesHandling.All;
+            //formatter.SerializerSettings.PreserveReferencesHandling = PreserveReferencesHandling.All;
             config.Formatters.Clear();
             config.Formatters.Add(formatter);
 
