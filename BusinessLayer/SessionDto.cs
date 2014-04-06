@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using EndToEnd.DataLayer.Model;
+using DataLayer.Model;
 
-namespace EndToEnd.BusinessLayer
+namespace BusinessLogicLayer
 {
     public class SessionDto
     {

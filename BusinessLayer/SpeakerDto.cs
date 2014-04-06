@@ -1,6 +1,6 @@
-﻿using EndToEnd.DataLayer.Model;
+﻿using DataLayer.Model;
 
-namespace EndToEnd.BusinessLayer
+namespace BusinessLogicLayer
 {
     public class SpeakerDto
     {

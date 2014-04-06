@@ -1,11 +1,10 @@
-﻿using EndToEnd.DataLayer;
-using EndToEnd.DataLayer.Model;
-using EndToEnd.DataLayer.Models;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
+using DataLayer;
+using DataLayer.Model;
 
-namespace EndToEnd.BusinessLayer
+namespace BusinessLogicLayer
 {
     public class ConferenceManager
     {

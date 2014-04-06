@@ -2,7 +2,7 @@
 using System.Collections;
 using System.ComponentModel.DataAnnotations;
 
-namespace EndToEnd.DataLayer.Validation
+namespace DataLayer.Validation
 {
     [AttributeUsage(AttributeTargets.Property, AllowMultiple = false)]
     public class RestrictCountAttribute : ValidationAttribute

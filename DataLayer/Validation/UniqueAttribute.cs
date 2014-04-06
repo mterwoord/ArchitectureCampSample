@@ -1,7 +1,7 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
 
-namespace EndToEnd.DataLayer.Validation
+namespace DataLayer.Validation
 {
     [AttributeUsage(AttributeTargets.Property, AllowMultiple = false, Inherited = true)]
     public class UniqueAttribute : ValidationAttribute

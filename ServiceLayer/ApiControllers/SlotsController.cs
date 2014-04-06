@@ -1,6 +1,5 @@
-﻿using EndToEnd.BusinessLayer;
-using EndToEnd.DataLayer.Model;
-using EndToEnd.DataLayer.Models;
+﻿using BusinessLogicLayer;
+using DataLayer.Model;
 using System.Collections.Generic;
 using System.Web.Http;
 

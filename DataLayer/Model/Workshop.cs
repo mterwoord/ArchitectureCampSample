@@ -1,7 +1,7 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace EndToEnd.DataLayer.Model
+namespace DataLayer.Model
 {
     [Table("Sessions")]
     public class Workshop : SessionBase

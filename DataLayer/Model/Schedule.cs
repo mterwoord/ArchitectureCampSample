@@ -2,7 +2,7 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace EndToEnd.DataLayer.Models
+namespace DataLayer.Model
 {
     [ComplexType]
     public class Schedule

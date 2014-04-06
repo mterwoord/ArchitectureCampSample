@@ -5,7 +5,7 @@ using System.Linq;
 using System.Linq.Expressions;
 using System.Reflection;
 
-namespace EndToEnd.DataLayer.Model
+namespace DataLayer.Model
 {
     /// <summary>
     /// Marker attribute to suppress auto copy

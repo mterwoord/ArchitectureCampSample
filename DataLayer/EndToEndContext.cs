@@ -3,9 +3,9 @@ using System.Data.Entity;
 using System.Data.Entity.Core.Objects.DataClasses;
 using System.Data.Entity.Infrastructure;
 using System.Data.Entity.ModelConfiguration.Conventions;
-using EndToEnd.DataLayer.Model;
+using DataLayer.Model;
 
-namespace EndToEnd.DataLayer
+namespace DataLayer
 {
     public class EndToEndContext : DbContext
     {

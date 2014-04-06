@@ -2,7 +2,7 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace EndToEnd.DataLayer.Model
+namespace DataLayer.Model
 {
     [Table("Speakers")]
     public class Speaker : EntityBase

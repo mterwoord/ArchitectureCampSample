@@ -1,8 +1,7 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations.Schema;
-using EndToEnd.DataLayer.Models;
 
-namespace EndToEnd.DataLayer.Model
+namespace DataLayer.Model
 {
     [Table("Sessions")]
     public class KeyNote : SessionBase

@@ -4,10 +4,9 @@ using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Xml;
-using EndToEnd.DataLayer.Models;
-using EndToEnd.DataLayer.Validation;
+using DataLayer.Validation;
 
-namespace EndToEnd.DataLayer.Model
+namespace DataLayer.Model
 {
     [Table("Sessions")]
     public abstract class SessionBase : EntityBase
