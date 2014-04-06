@@ -104,12 +104,6 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ApiControllers\SlotsController.cs" />
-    <Compile Include="ApiControllers\ScheduleController.cs" />
-    <Compile Include="ApiControllers\RatingsController.cs" />
-    <Compile Include="ApiControllers\TracksController.cs" />
-    <Compile Include="ApiControllers\SpeakersController.cs" />
-    <Compile Include="ApiControllers\SessionsController.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -135,6 +129,10 @@
     <ProjectReference Include="..\Hosting\Hosting.csproj">
       <Project>{74a2d7e7-2581-470c-8f82-16f4b02e09dd}</Project>
       <Name>Hosting</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ServicesLayer\ServicesLayer.csproj">
+      <Project>{5d67f1c5-13f9-45cb-8157-180538a27341}</Project>
+      <Name>ServicesLayer</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
