@@ -1,12 +1,11 @@
-﻿using EndToEnd.DataLayer.Model;
-using EndToEnd.DataLayer.Models;
-using System;
+﻿using System;
 using System.Data.Entity;
 using System.Data.Entity.Core.Objects.DataClasses;
 using System.Data.Entity.Infrastructure;
 using System.Data.Entity.ModelConfiguration.Conventions;
+using EndToEnd.DataLayer.Model;
 
-namespace EndToEnd.DataLayer.Context
+namespace EndToEnd.DataLayer
 {
     public class EndToEndContext : DbContext
     {
