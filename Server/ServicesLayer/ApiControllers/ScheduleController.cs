@@ -7,11 +7,11 @@ namespace ServicesLayer.ApiControllers
 {
     public class ScheduleController : ApiController
     {
-        private ConferenceManager conferenceManager;
+        private IConferenceManager conferenceManager;
 
-        public ScheduleController()
+        public ScheduleController(IConferenceManager manager)
         {
-            conferenceManager = new ConferenceManager();
+            conferenceManager = manager;
         }
 
         [HttpGet]

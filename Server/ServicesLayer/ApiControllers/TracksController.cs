@@ -7,11 +7,11 @@ namespace ServicesLayer.ApiControllers
 {
     public class TracksController : ApiController
     {
-        private ConferenceManager conferenceManager;
+        private IConferenceManager conferenceManager;
 
-        public TracksController()
+        public TracksController(IConferenceManager manager)
         {
-            conferenceManager = new ConferenceManager();
+            conferenceManager = manager;
         }
 
         [HttpGet]

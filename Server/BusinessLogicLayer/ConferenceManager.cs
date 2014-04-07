@@ -6,13 +6,12 @@ using System.Linq;
 
 namespace BusinessLogicLayer
 {
-    public class ConferenceManager
+    public class ConferenceManager : IConferenceManager
     {
         private EndToEndContext context;
 
         public ConferenceManager()
         {
-            // TODO: DI
             context = new EndToEndContext();
         }
 

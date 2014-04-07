@@ -54,6 +54,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="IConferenceManager.cs" />
     <Compile Include="SessionDto.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ConferenceManager.cs" />

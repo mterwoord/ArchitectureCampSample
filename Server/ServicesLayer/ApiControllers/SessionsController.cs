@@ -6,11 +6,11 @@ namespace ServicesLayer.ApiControllers
 {
     public class SessionsController : ApiController
     {
-        private ConferenceManager conferenceManager;
+        private IConferenceManager conferenceManager;
 
-        public SessionsController()
+        public SessionsController(IConferenceManager manager)
         {
-            conferenceManager = new ConferenceManager();
+            conferenceManager = manager;
         }
 
         [HttpGet]
