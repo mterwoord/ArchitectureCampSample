@@ -37,7 +37,11 @@ namespace Services.SessionServiceReference
         {
             var hubConnection = new HubConnection(ConfigurationManager.AppSettings["EndToEnd:SignalRBaseUrl"]);
             var hubProxy = hubConnection.CreateHubProxy("RatingsHub");
-            hubProxy.On<int>("RatingUpdated", ratingId => Debug.WriteLine("Ratings update for {0}", ratingId));
+            hubProxy.On<int>("RatingUpdated", ratingId =>
+            {
+                Debug.WriteLine("Ratings update for {0}", ratingId);
+                //OnRatingUpdated(new RatingUpdatedEventArgs(ratingId));
+            });
 
             await hubConnection.Start();
         }
