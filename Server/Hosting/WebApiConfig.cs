@@ -20,6 +20,8 @@ namespace Hosting
                 defaults: new { id = RouteParameter.Optional }
             );
 
+            config.IncludeErrorDetailPolicy = IncludeErrorDetailPolicy.Always; // TODO: remove after development
+
             config.DependencyResolver = ContainerConfiguration.GetWebApiDependencyResolver();
         }
     }
