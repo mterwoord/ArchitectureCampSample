@@ -12,6 +12,8 @@ namespace Hosting
             WebApiConfig.Register(config);
 
             app.UseWebApi(config);
+
+            app.MapSignalR();
         }
     }
 }

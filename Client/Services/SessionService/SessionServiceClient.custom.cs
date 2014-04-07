@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.ObjectModel;
 using System.Configuration;
+using System.Diagnostics;
 using System.Net.Http;
 using System.Threading.Tasks;
+using Microsoft.AspNet.SignalR.Client;
 
 namespace Services.SessionServiceReference
 {
@@ -17,6 +19,8 @@ namespace Services.SessionServiceReference
             //httpClient = new HttpClient(new HttpClientHandler { UseProxy = true, Proxy = new WebProxy("http://127.0.0.1:8888", false) });
             httpClient = new HttpClient();
             httpClient.BaseAddress = new Uri(ConfigurationManager.AppSettings["EndToEnd:ServicesBaseUrl"]);
+
+            RegisterSignalR();
         }
 
         protected virtual void OnRatingUpdated(RatingUpdatedEventArgs e)
@@ -27,6 +31,15 @@ namespace Services.SessionServiceReference
             {
                 handler(this, e);
             }
+        }
+
+        private async Task RegisterSignalR()
+        {
+            var hubConnection = new HubConnection(ConfigurationManager.AppSettings["EndToEnd:SignalRBaseUrl"]);
+            var hubProxy = hubConnection.CreateHubProxy("RatingsHub");
+            hubProxy.On<int>("RatingUpdated", ratingId => Debug.WriteLine("Ratings update for {0}", ratingId));
+
+            await hubConnection.Start();
         }
 
         public ObservableCollection<Speaker> GetSpeakerList()
