@@ -10,11 +10,23 @@ namespace Services.SessionServiceReference
     {
         private HttpClient httpClient;
 
+        public event EventHandler<RatingUpdatedEventArgs> RatingUpdated;
+
         public SessionServiceClient()
         {
             //httpClient = new HttpClient(new HttpClientHandler { UseProxy = true, Proxy = new WebProxy("http://127.0.0.1:8888", false) });
             httpClient = new HttpClient();
             httpClient.BaseAddress = new Uri(ConfigurationManager.AppSettings["EndToEnd:ServicesBaseUrl"]);
+        }
+
+        protected virtual void OnRatingUpdated(RatingUpdatedEventArgs e)
+        {
+            EventHandler<RatingUpdatedEventArgs> handler = RatingUpdated;
+
+            if (handler != null)
+            {
+                handler(this, e);
+            }
         }
 
         public ObservableCollection<Speaker> GetSpeakerList()

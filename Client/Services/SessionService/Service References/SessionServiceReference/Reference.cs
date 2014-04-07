@@ -853,7 +853,7 @@ namespace Services.SessionServiceReference
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ServiceModel.ServiceContractAttribute(ConfigurationName="SessionServiceReference.ISessionService")]
-    public interface ISessionService {
+    public partial interface ISessionService {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ISessionService/GetSpeakerList", ReplyAction="http://tempuri.org/ISessionService/GetSpeakerListResponse")]
         System.Collections.ObjectModel.ObservableCollection<Services.SessionServiceReference.Speaker> GetSpeakerList();

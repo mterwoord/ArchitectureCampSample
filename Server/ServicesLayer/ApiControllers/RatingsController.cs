@@ -2,6 +2,7 @@
 using System.Web.Http;
 using BusinessLogicLayer;
 using DataLayer.Model;
+using Microsoft.AspNet.SignalR;
 
 namespace ServicesLayer.ApiControllers
 {
@@ -32,6 +33,8 @@ namespace ServicesLayer.ApiControllers
         [ActionName("list")]
         public Rating AddRating(Rating rating)
         {
+            GlobalHost.ConnectionManager.GetHubContext<RatingsHub>().Clients.All.ratingUpdated(rating.Id);
+
             return conferenceManager.AddRating(rating);
         }
 
@@ -39,6 +42,8 @@ namespace ServicesLayer.ApiControllers
         [ActionName("list")]
         public void UpdateRating(Rating rating)
         {
+            GlobalHost.ConnectionManager.GetHubContext<RatingsHub>().Clients.All.ratingUpdated(rating.Id);
+
             conferenceManager.UpdateRating(rating);
         }
 
