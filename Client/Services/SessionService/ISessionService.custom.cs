@@ -15,6 +15,11 @@ namespace Services.SessionServiceReference
         {
             _rating = rating;
         }
+
+        public RatingUpdate Rating
+        {
+            get { return _rating; }
+        }
     }
 
     public class RatingUpdate
