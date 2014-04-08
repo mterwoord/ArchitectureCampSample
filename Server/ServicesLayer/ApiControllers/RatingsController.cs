@@ -35,8 +35,10 @@ namespace ServicesLayer.ApiControllers
         public Rating AddRating(Rating rating)
         {
             var updatedRating = conferenceManager.AddRating(rating);
+
             GlobalHost.ConnectionManager.GetHubContext<RatingsHub>().Clients.All.ratingUpdated(
                 new RatingUpdate() { SpeakerId = rating.SpeakerId, SessionId = rating.SessionId });
+            
             return updatedRating;
         }
 
@@ -45,6 +47,7 @@ namespace ServicesLayer.ApiControllers
         public void UpdateRating(Rating rating)
         {
             conferenceManager.UpdateRating(rating);
+
             GlobalHost.ConnectionManager.GetHubContext<RatingsHub>().Clients.All.ratingUpdated(
                 new RatingUpdate() { SpeakerId = rating.SpeakerId, SessionId = rating.SessionId });
         }

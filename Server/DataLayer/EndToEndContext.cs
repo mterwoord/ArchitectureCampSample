@@ -10,7 +10,6 @@ namespace DataLayer
     public class EndToEndContext : DbContext
     {
         public EndToEndContext()
-            : base("EndToEndContext")
         {
             ((IObjectContextAdapter)this).ObjectContext.SavingChanges += ObjectContext_SavingChanges;
          

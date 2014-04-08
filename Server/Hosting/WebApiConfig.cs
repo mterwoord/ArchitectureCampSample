@@ -1,5 +1,6 @@
 ﻿using System.Net.Http.Formatting;
 using System.Web.Http;
+using Newtonsoft.Json;
 
 namespace Hosting
 {
@@ -8,6 +9,7 @@ namespace Hosting
         public static void Register(HttpConfiguration config)
         {
             var formatter = new JsonMediaTypeFormatter();
+            //formatter.SerializerSettings.PreserveReferencesHandling = PreserveReferencesHandling.All;
 
             config.Formatters.Clear();
             config.Formatters.Add(formatter);
@@ -19,6 +21,8 @@ namespace Hosting
                 routeTemplate: "api/{controller}/{action}/{id}",
                 defaults: new { id = RouteParameter.Optional }
             );
+
+            config.IncludeErrorDetailPolicy = IncludeErrorDetailPolicy.Always;
 
             config.DependencyResolver = ContainerConfiguration.GetWebApiDependencyResolver();
         }
