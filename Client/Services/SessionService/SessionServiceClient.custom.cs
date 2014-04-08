@@ -2,6 +2,7 @@
 using System.Collections.ObjectModel;
 using System.Configuration;
 using System.Diagnostics;
+using System.Net;
 using System.Net.Http;
 using System.Threading.Tasks;
 using Microsoft.AspNet.SignalR.Client;
@@ -37,10 +38,10 @@ namespace Services.SessionServiceReference
         {
             var hubConnection = new HubConnection(ConfigurationManager.AppSettings["EndToEnd:SignalRBaseUrl"]);
             var hubProxy = hubConnection.CreateHubProxy("RatingsHub");
-            hubProxy.On<int>("RatingUpdated", ratingId =>
+            hubProxy.On<RatingUpdate>("RatingUpdated", rating =>
             {
-                Debug.WriteLine("Ratings update for {0}", ratingId);
-                //OnRatingUpdated(new RatingUpdatedEventArgs(ratingId));
+                Debug.WriteLine("Ratings update for {0}", rating.SessionId);
+                OnRatingUpdated(new RatingUpdatedEventArgs(rating));
             });
 
             await hubConnection.Start();
