@@ -38,6 +38,10 @@ namespace Services.SessionServiceReference
         {
             var hubConnection = new HubConnection(ConfigurationManager.AppSettings["EndToEnd:SignalRBaseUrl"]);
             var hubProxy = hubConnection.CreateHubProxy("RatingsHub");
+
+            hubConnection.TraceLevel = TraceLevels.All;
+            hubConnection.TraceWriter = Console.Out;
+
             hubProxy.On<RatingUpdate>("RatingUpdated", rating =>
             {
                 Debug.WriteLine("Ratings update for {0}", rating.SessionId);

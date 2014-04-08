@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNet.SignalR;
 
-namespace ServicesLayer
+namespace ServicesLayer.Hubs
 {
     public class RatingsHub : Hub
     {

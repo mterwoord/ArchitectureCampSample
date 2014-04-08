@@ -3,6 +3,7 @@ using System.Web.Http;
 using BusinessLogicLayer;
 using DataLayer.Model;
 using Microsoft.AspNet.SignalR;
+using ServicesLayer.Hubs;
 
 namespace ServicesLayer.ApiControllers
 {
