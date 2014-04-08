@@ -9,11 +9,18 @@ namespace Services.SessionServiceReference
 
     public class RatingUpdatedEventArgs : EventArgs
     {
-        private readonly int _ratingId;
+        private readonly RatingUpdate _rating;
 
-        public RatingUpdatedEventArgs(int ratingId)
+        public RatingUpdatedEventArgs(RatingUpdate rating)
         {
-            _ratingId = ratingId;
+            _rating = rating;
         }
     }
+
+    public class RatingUpdate
+    {
+        public int SessionId { get; set; }
+        public int SpeakerId { get; set; }
+    }
+
 }

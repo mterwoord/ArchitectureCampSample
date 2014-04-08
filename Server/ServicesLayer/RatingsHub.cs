@@ -1,13 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Microsoft.AspNet.SignalR;
+﻿using Microsoft.AspNet.SignalR;
 
 namespace ServicesLayer
 {
     public class RatingsHub : Hub
     {
+    }
+
+    public class RatingUpdate
+    {
+        public int SessionId { get; set; }
+        public int SpeakerId { get; set; }
     }
 }
