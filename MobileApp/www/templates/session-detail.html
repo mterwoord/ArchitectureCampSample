@@ -1,0 +1,21 @@
+<ion-view title="{{session.Title}}">
+  <ion-content has-header="true" padding="true">
+      <div class="list card">
+          <div class="item item-avatar">
+              <h2>{{session.Title}}</h2>
+              <p>{{session.Speaker1.Name}}</p>
+          </div>
+
+          <div class="item">
+              <rating value="currentRating" max="5"></rating>
+              <button class="button button-small button-outline icon-right ion-navicon button-balanced pull-right" ng-click="rateIt()">Rate it!</button>
+          </div>
+
+          <div class="item item-body">
+              <p>
+                  {{session.Abstract}}
+              </p>
+          </div>
+      </div>
+  </ion-content>
+</ion-view>
