@@ -10,7 +10,8 @@ angular.module('starter.services', [])
                 return $http.get(baseUrl + "sessions/list/" + sessionId);
             },
             rate: function(rating, sessionId, speakerId) {
-                $http.post(baseUrl + "ratings/list", { Rate: rating, SessionId: sessionId, SpeakerId: speakerId });
+                // This is a bad hack for demo - there are serious issues with the original services architecture... :(
+                $http.put(baseUrl + "ratings/list", { Id: 1, Rate: rating, SessionId: sessionId, SpeakerId: speakerId });
             }
         }
     });
