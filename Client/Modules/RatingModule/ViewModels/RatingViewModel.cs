@@ -5,6 +5,7 @@ using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.ComponentModel.Composition;
 using System.Linq;
+using System.Windows;
 using System.Windows.Data;
 
 namespace ImagesModule.ViewModels
@@ -19,7 +20,7 @@ namespace ImagesModule.ViewModels
         public async void Initialize(IServicePool servicePool)
         {
             _sessionService = servicePool.GetService<ISessionService>();
-            
+            _sessionService.RatingUpdated += this.OnRatingUpdated;
             this.AddCommand = new DelegateCommand(p => !this.IsBusy, this.ExecuteAddCommand);
             this.DeleteCommand = new DelegateCommand(p => !this.IsBusy, this.ExecuteDeleteCommand);
             this.CancelDeleteCommand = new DelegateCommand(p => !this.IsBusy, this.ExecuteCancelDeleteCommand);
@@ -34,6 +35,23 @@ namespace ImagesModule.ViewModels
 
             this.OnCurrentSessionChanged(null, EventArgs.Empty);
             this.IsBusy = false;
+        }
+
+        async void OnRatingUpdated(object sender, RatingUpdatedEventArgs e)
+        {
+            try
+            {
+                var currentRating = this.RatingsView.CurrentItem as Rating;
+                if (currentRating.SessionId == e.Rating.SessionId)
+                {
+                    var rating = await _sessionService.GetRatingByIdAsync(currentRating.Id);
+                    currentRating.Rate = rating.Rate;
+                }
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private async void OnCurrentSessionChanged(object sender, EventArgs e)

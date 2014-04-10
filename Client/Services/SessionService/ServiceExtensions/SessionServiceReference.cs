@@ -1,9 +1,9 @@
-﻿using Contracts;
-using System.ServiceModel;
+﻿using System;
+using Contracts;
 
 namespace Services.SessionServiceReference
 {
-    public partial class SessionServiceClient : ClientBase<ISessionService>, ISessionService, IService
+    public partial class SessionServiceClient : ISessionService, IService
     {
         public IServicePool ServicePool { get; set; }
     }
